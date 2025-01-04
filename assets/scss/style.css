@@ -481,6 +481,25 @@ address {
 .main_home .career_home {
   background-image: url("../images/career_home.png");
 }
+.main_home .office_home {
+  background-image: url("../images/office_home.png");
+}
+@media (max-width: 768px) {
+  .main_home .office_home {
+    background-image: url("../images/office_home_media.png");
+  }
+}
+.main_home .office_home_bg {
+  display: none;
+}
+.main_home .office_home .main_title {
+  margin: 86px 0 100px;
+}
+@media (max-width: 993px) {
+  .main_home .office_home .main_title {
+    margin: 182px 0 0 0;
+  }
+}
 .main_home_content {
   position: relative;
   z-index: 3;
@@ -506,6 +525,53 @@ address {
   height: 100%;
   z-index: 2;
   background: linear-gradient(270deg, rgba(13, 32, 48, 0) 0%, #0D2030 100%);
+}
+
+.paginations {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+@media (max-width: 993px) {
+  .paginations {
+    margin-top: 20px;
+  }
+}
+.paginations a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #0D2030;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s linear;
+}
+@media (max-width: 993px) {
+  .paginations a {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+.paginations a:hover {
+  background-color: #0D2030;
+  color: #FFFFFF;
+}
+.paginations a.active {
+  background-color: #0D2030;
+  color: #FFFFFF;
+}
+.paginations a.dote {
+  background: transparent;
+  color: rgba(13, 32, 48, 0.3490196078);
 }
 
 .header {
@@ -793,6 +859,122 @@ address {
 }
 .policies_card_img {
   width: 100%;
+}
+
+.office_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+@media (max-width: 993px) {
+  .office_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .office_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.office_card {
+  padding: 20px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 993px) {
+  .office_card {
+    gap: 20px;
+  }
+}
+.office_card .logo {
+  width: 210px;
+}
+.office_card .line {
+  height: 1px;
+  width: 100%;
+  background: rgba(13, 32, 48, 0.0509803922);
+}
+.office_card h6 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33.6px;
+  letter-spacing: -0.02em;
+  color: #0D2030;
+  margin-bottom: 16px;
+}
+@media (max-width: 993px) {
+  .office_card h6 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.office_card p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25.2px;
+  letter-spacing: -0.02em;
+  color: rgba(13, 32, 48, 0.7490196078);
+}
+@media (max-width: 993px) {
+  .office_card p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.office_card_bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.office_card_bottom span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25.2px;
+  letter-spacing: -0.02em;
+  color: #0D2030;
+}
+@media (max-width: 993px) {
+  .office_card_bottom span svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 993px) {
+  .office_card_bottom span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.office_card_btn {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.94px;
+  letter-spacing: -0.04em;
+  color: #0D2030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(13, 32, 48, 0.0509803922);
+  padding: 20px;
+}
+@media (max-width: 993px) {
+  .office_card_btn svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media (max-width: 993px) {
+  .office_card_btn {
+    padding: 12px;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .footer {

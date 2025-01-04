@@ -151,6 +151,26 @@ address {
     background-image: url('../images/career_home.png');
   }
 
+  .office_home {
+    background-image: url('../images/office_home.png');
+
+    @include media('md') {
+      background-image: url('../images/office_home_media.png');
+    }
+
+    &_bg {
+      display: none;
+    }
+
+    .main_title {
+      margin: 86px 0 100px;
+
+      @include media('lg') {
+        margin: 182px 0 0 0;
+      }
+    }
+  }
+
   &_content {
     position: relative;
     z-index: 3;
@@ -178,5 +198,54 @@ address {
     height: 100%;
     z-index: 2;
     background: linear-gradient(270deg, rgba(13, 32, 48, 0) 0%, #0D2030 100%);
+  }
+}
+
+.paginations {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  @include media('lg') {
+    margin-top: 20px;
+  }
+
+  a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $color-under;
+    border-radius: 4px;
+    width: 48px;
+    height: 48px;
+    background: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include transition();
+
+    @include media('lg') {
+      width: 40px;
+      height: 40px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+
+    &:hover {
+      background-color: $color-under;
+      color: $color-white;
+    }
+
+    &.active {
+      background-color: $color-under;
+      color: $color-white;
+    }
+
+    &.dote {
+      background: transparent;
+      color: #0D203059;
+    }
   }
 }
