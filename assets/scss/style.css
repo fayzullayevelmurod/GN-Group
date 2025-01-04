@@ -478,6 +478,9 @@ address {
 .main_home .policies_home {
   background-image: url("../images/policies_home.png");
 }
+.main_home .career_home {
+  background-image: url("../images/career_home.png");
+}
 .main_home_content {
   position: relative;
   z-index: 3;
@@ -734,6 +737,8 @@ address {
 }
 .policies_card {
   position: relative;
+  border-radius: 4px;
+  overflow: hidden;
 }
 .policies_card_text {
   width: 100%;

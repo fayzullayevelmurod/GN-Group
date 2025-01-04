@@ -16,6 +16,8 @@
 
   &_card {
     position: relative;
+    border-radius: 4px;
+    overflow: hidden;
 
     &_text {
       width: 100%;
