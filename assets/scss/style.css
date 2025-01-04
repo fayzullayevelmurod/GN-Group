@@ -475,6 +475,9 @@ address {
     border-radius: 0;
   }
 }
+.main_home .policies_home {
+  background-image: url("../images/policies_home.png");
+}
 .main_home_content {
   position: relative;
   z-index: 3;
@@ -712,6 +715,79 @@ address {
     border-radius: 2px;
     border: 1px solid rgba(13, 32, 48, 0.0509803922);
   }
+}
+
+.policies_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media (max-width: 993px) {
+  .policies_cards {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .policies_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.policies_card {
+  position: relative;
+}
+.policies_card_text {
+  width: 100%;
+  padding: 30px 5px 30px 30px;
+}
+@media (max-width: 993px) {
+  .policies_card_text {
+    padding: 13px 10px;
+  }
+}
+.policies_card .main_text {
+  max-width: 100%;
+}
+.policies_card h6 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 35.2px;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+@media (max-width: 993px) {
+  .policies_card h6 {
+    font-size: 16px;
+    line-height: 17px;
+    margin-bottom: 12px;
+  }
+}
+.policies_card_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  background: rgba(217, 217, 217, 0.05);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+}
+.policies_card_bottom button {
+  min-width: 109px;
+  background: #302470;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 993px) {
+  .policies_card_bottom button {
+    display: none;
+  }
+}
+.policies_card_img {
+  width: 100%;
 }
 
 .footer {

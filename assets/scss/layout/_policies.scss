@@ -1,0 +1,77 @@
+// policies
+.policies {
+  &_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+
+    @include media('lg') {
+      gap: 20px;
+    }
+
+    @include media('md') {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &_card {
+    position: relative;
+
+    &_text {
+      width: 100%;
+      padding: 30px 5px 30px 30px;
+
+      @include media('lg') {
+        padding: 13px 10px;
+      }
+    }
+
+    .main_text {
+      max-width: 100%;
+    }
+
+    h6 {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 35.2px;
+      letter-spacing: -0.04em;
+      color: $color-white;
+      margin-bottom: 20px;
+
+      @include media('lg') {
+        font-size: 16px;
+        line-height: 17px;
+        margin-bottom: 12px;
+      }
+    }
+
+    &_bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      background: $color-white-5;
+      backdrop-filter: blur(16px);
+
+      button {
+        min-width: 109px;
+        background: $color-blue-dark-2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media('lg') {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &_card_img {
+    width: 100%;
+  }
+}
+// policies
