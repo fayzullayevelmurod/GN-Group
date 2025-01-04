@@ -1,3 +1,78 @@
 .footer {
-  
+  margin-bottom: 20px;
+
+  &_logo {
+    display: flex;
+    width: 216px;
+
+    img {
+      width: 100%;
+    }
+
+    @include media('lg') {
+      width: 186px;
+    }
+  }
+
+  &_top {
+    border: 1px solid $color-blue-light;
+    border-radius: 4px;
+    background-color: $color-white;
+    padding: 28px 40px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media('lg') {
+      padding: 20px 15px;
+      border-radius: 2px;
+    }
+
+    .line {
+      @include media('lg') {
+        display: none;
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+
+      @include media('lg') {
+        gap: 6px;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+      }
+
+      span {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 14.63px;
+        letter-spacing: -0.04em;
+        text-align: center;
+        color: $color-dark;
+
+        @include media('lg') {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &_bottom {
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 40px;
+    background-image: url('../images/footer_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }

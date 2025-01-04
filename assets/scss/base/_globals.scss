@@ -118,11 +118,11 @@ address {
   }
 }
 
-.section-top {
-  margin-top: 60px;
+.section-bottom {
+  margin-bottom: 60px;
 
   @include media('lg') {
-    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
