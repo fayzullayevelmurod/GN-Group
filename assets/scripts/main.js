@@ -1,3 +1,12 @@
+// burger
+let header_link = document.querySelector('.header_link');
+let burger_btn = document.querySelector('.burger_btn');
+
+burger_btn.addEventListener('click', () => {
+  header_link.classList.toggle('active');
+})
+// burger
+
 
 let swiper = new Swiper(".treatmentsSwiper", {
   slidesPerView: 1.10,

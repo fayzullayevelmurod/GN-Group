@@ -27,6 +27,7 @@ body {
   font-family: $font-Alexandria;
   font-style: normal;
   font-display: swap;
+  background: $color-body;
 }
 
 input, textarea {
@@ -52,15 +53,122 @@ address {
 }
 
 .container {
-  max-width: calc(1337px);
+  max-width: calc(1240px);
   margin: 0 auto;
 
-  @include media('lg') {
+  @include media('xl') {
     padding: 0 20px;
   }
+}
 
+.main_title {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 61.6px;
+  letter-spacing: -0.02em;
+  color: $color-white;
+
+  @include media('lg') {
+    font-size: 28px;
+    line-height: 30.8px;
+    letter-spacing: -0.04em;
+  }
+}
+
+.main_text {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 26.52px;
+  letter-spacing: -0.02em;
+  color: $color-white-85;
+  max-width: 367px;
+
+  @include media('lg') {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18.72px;
+    letter-spacing: -0.02em;
+    max-width: 100%;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  a,li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    letter-spacing: -0.04em;
+
+    @include media('lg') {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  a {
+    color: $color-white-30;
+  }
+
+  li {
+    color: $color-white;
+  }
 }
 
 .section-top {
-  margin-top: 160px;
+  margin-top: 60px;
+
+  @include media('lg') {
+    margin-top: 20px;
+  }
+}
+
+.main_home {
+  &_in {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    background-image: url('../images/workers_home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+
+    @include media('lg') {
+      padding: 20px;
+      border-radius: 0;
+    }
+  }
+
+  &_content {
+    position: relative;
+    z-index: 3;
+  }
+
+  .main_title {
+    margin: 48px 0 18px 0;
+
+    @include media('lg') {
+      margin: 272px 0 12px 0;
+    }
+  }
+
+  .container {
+    @include media('lg') {
+      padding: 0;
+    }
+  }
+
+  &_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(270deg, rgba(13, 32, 48, 0) 0%, #0D2030 100%);
+  }
 }
