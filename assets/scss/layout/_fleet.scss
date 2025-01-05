@@ -1,0 +1,213 @@
+// fleet
+.fleet {
+
+  &_tabs {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+
+    @include media('lg') {
+      padding: 20px 0 12px 0;
+    }
+
+    @include media('md') {
+      justify-content: space-between;
+    }
+
+    a {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 26.4px;
+      letter-spacing: -0.04em;
+      color: #0D203080;
+      display: flex;
+      align-items: start;
+      flex-direction: row;
+
+      @include media('lg') {
+        font-size: 16px;
+        line-height: 17px;
+      }
+
+      sup {
+        font-size: 12px;
+        line-height: 12px;
+        transform: translateY(8px);
+        margin-left: 4px;
+      }
+
+      &.active {
+        color: $color-under;
+      }
+    }
+  }
+
+  &_date {
+    padding: 18px 20px;
+    border-radius: 4px;
+    background: $color-blue-dark-2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-coral;
+    margin-bottom: 30px;
+
+    @include media('lg') {
+      padding: 14px;
+    }
+
+    &_right {
+      @include media('lg') {
+        text-align: right;
+      }
+    }
+
+    span {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 16.5px;
+      letter-spacing: -0.04em;
+      color: $color-white;
+
+      @include media('lg') {
+        font-size: 12px;
+        line-height: 13px;
+      }
+    }
+
+    h6 {
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 39.6px;
+      letter-spacing: -0.04em;
+      color: $color-white;
+      margin-top: 4px;
+
+      @include media('lg') {
+        font-size: 24px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  &_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+
+    @include media('lg') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media('md') {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+  }
+
+  &_card {
+    background: $color-white;
+    border-radius: 4px;
+    border: 1px solid $color-blue-light;
+    overflow: hidden;
+
+    .line {
+      height: 1px;
+      width: 100%;
+      background: #0D20300D;
+    }
+
+    .fleet_card_img {
+      width: 100%;
+    }
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    h6 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 26.4px;
+      letter-spacing: -0.04em;
+      color: $color-under;
+
+      @include media('lg') {
+        font-size: 14px;
+        line-height: 15px;
+      }
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    span {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 21px;
+      letter-spacing: -0.02em;
+      color: $color-under-75;
+
+      @include media('lg') {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    b {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: -0.02em;
+      color: $color-under;
+
+      @include media('lg') {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    &_btn {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 21.94px;
+      letter-spacing: -0.04em;
+      color: $color-under;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      border-radius: 8px;
+      padding: 20px;
+      border: 1px solid #0D20300D;
+
+      svg {
+        @include media('lg') {
+          width: 12px;
+          height: 12px;
+        }
+      }
+
+      @include media('lg') {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 13px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+// fleet

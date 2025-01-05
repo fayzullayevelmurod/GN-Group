@@ -171,6 +171,10 @@ address {
     }
   }
 
+  .fleet_home {
+    background-image: url('../images/fleet_home.png');
+  }
+
   &_content {
     position: relative;
     z-index: 3;
