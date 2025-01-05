@@ -949,6 +949,9 @@ address {
     padding: 13px 10px;
   }
 }
+.policies_card:hover .policies_card_bottom {
+  background: #2C1F6C;
+}
 .policies_card .main_text {
   max-width: 100%;
 }
@@ -978,6 +981,7 @@ address {
   background: rgba(217, 217, 217, 0.05);
   -webkit-backdrop-filter: blur(16px);
           backdrop-filter: blur(16px);
+  transition: 0.3s linear;
 }
 .policies_card_bottom button {
   min-width: 109px;
@@ -1096,6 +1100,19 @@ address {
   border-radius: 4px;
   border: 1px solid rgba(13, 32, 48, 0.0509803922);
   padding: 20px;
+  transition: 0.3s linear;
+}
+.office_card_btn:hover {
+  flex-direction: row-reverse;
+  color: #FFFFFF;
+  background: #302470;
+  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+}
+.office_card_btn:hover svg path {
+  stroke: #FFFFFF;
+}
+.office_card_btn svg path {
+  transition: 0.3s linear;
 }
 @media (max-width: 993px) {
   .office_card_btn svg {
@@ -1297,6 +1314,16 @@ address {
   border-radius: 8px;
   padding: 20px;
   border: 1px solid rgba(13, 32, 48, 0.0509803922);
+  transition: 0.3s linear;
+}
+.fleet_card_btn:hover {
+  flex-direction: row-reverse;
+  color: #FFFFFF;
+  background: #302470;
+  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+}
+.fleet_card_btn:hover svg path {
+  stroke: #FFFFFF;
 }
 @media (max-width: 993px) {
   .fleet_card_btn svg {

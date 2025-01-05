@@ -104,8 +104,26 @@
       border-radius: 4px;
       border: 1px solid #0D20300D;
       padding: 20px;
+      @include transition();
+
+      &:hover {
+        svg {
+          path {
+            stroke: $color-white;
+          }
+        }
+        
+        flex-direction: row-reverse;
+        color: $color-white;
+        background: #302470;
+        border: 1px solid #FFFFFF26
+      }
 
       svg {
+        path {
+          @include transition();
+        }
+
         @include media('lg') {
           width: 12px;
           height: 12px;
