@@ -503,6 +503,9 @@ address {
 .main_home .fleet_home {
   background-image: url("../images/fleet_home.png");
 }
+.main_home .contact_home {
+  background-image: url("../images/contact_home.png");
+}
 .main_home_content {
   position: relative;
   z-index: 3;
