@@ -1,0 +1,108 @@
+// policies_conservation
+.policies_conservation {
+
+  .container {
+    display: flex;
+    gap: 24px;
+
+    @include media('lg') {
+      gap: 0;
+      flex-direction: column;
+    }
+  }
+
+  .policies_conservation_container {
+    @include media('lg') {
+      padding: 0;
+    }
+  }
+
+  &_text {
+    max-width: 608px;
+
+    @include media('lg') {
+      max-width: 100%;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0;
+
+      @include media('lg') {
+        gap: 20px;
+        padding: 0 20px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 32.4px;
+      letter-spacing: -0.02em;
+      color: $color-under;
+
+      @include media('lg') {
+        font-size: 12px;
+        line-height: 21px;
+      }
+    }
+
+    a {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 21.94px;
+      letter-spacing: -0.04em;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 20px 40px;
+      border-radius: 4px;
+      background: #302470;
+      border: 1px solid #FFFFFF26;
+      color: $color-white;
+      width: max-content;
+
+      svg {
+        @include media('lg') {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      @include media('lg') {
+        padding: 12px 40px;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  .main_home {
+    width: 100%;
+
+    .container {
+      padding: 0;
+      width: 100%;
+      display: block;
+    }
+
+    &_content {
+      .policies_conservation_title {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 35.2px;
+        letter-spacing: -0.02em;
+        color: $color-white;
+
+        br {
+          @include media('lg') {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+// policies_conservation

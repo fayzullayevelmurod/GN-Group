@@ -1,15 +1,31 @@
 // news
 .news {
+  margin-top: 30px;
+
+  @include media('lg') {
+    margin-top: 20px;
+  }
 
   .container {
     display: flex;
     gap: 24px;
+    overflow: visible;
+    position: relative;
+
+    @include media('lg') {
+      gap: 20px;
+      flex-direction: column;
+    }
   }
 
   .breadcrumb {
     padding-left: 0;
     padding-bottom: 30px;
     border-bottom: 1px solid #E9EBEC;
+
+    @include media('lg') {
+      padding-bottom: 20px;
+    }
 
     a,
     li {
@@ -18,6 +34,11 @@
       line-height: 17.07px;
       letter-spacing: -0.04em;
       color: $color-under;
+
+      @include media('lg') {
+        font-size: 12px;
+        line-height: 14px;
+      }
     }
 
     li {
@@ -35,6 +56,12 @@
     flex-direction: column;
     gap: 30px;
 
+    @include media('lg') {
+      gap: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #E9EBEC;
+    }
+
     ul {
       padding-left: 20px;
 
@@ -46,6 +73,144 @@
     li {
       list-style-type: disc;
     }
+
+    h3 {
+      font-size: 42px;
+      font-weight: 500;
+      line-height: 46.2px;
+      letter-spacing: -0.04em;
+      color: $color-under;
+
+      @include media('lg') {
+        font-size: 24px;
+        line-height: 26px;
+      }
+    }
+
+    h6 {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 35.2px;
+      letter-spacing: -0.04em;
+      color: $color-under;
+
+      @include media('lg') {
+        font-size: 16px;
+        line-height: 17px;
+      }
+    }
+
+    p,
+    li,
+    span {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 32.4px;
+      color: $color-under;
+
+      @include media('lg') {
+        font-size: 12px;
+        line-height: 21px;
+      }
+    }
+
+    b {
+      font-weight: 400;
+    }
+  }
+
+  &_right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 20px;
+    height: 100%;
+
+    h4 {
+      margin-bottom: 10px;
+      width: 100%;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 19.8px;
+      letter-spacing: -0.04em;
+      color: $color-under;
+      padding-bottom: 27px;
+      border-bottom: 1px solid #E9EBEC;
+
+      @include media('lg') {
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        border-bottom: 1px solid #E9EBEC;
+      }
+    }
+  }
+
+  &_block {
+    min-width: 397px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @include media('lg') {
+      min-width: 100%;
+      gap: 12px;
+    }
+
+    &_img {
+      min-width: 186px;
+      border-radius: 2px;
+      flex-shrink: 0;
+
+      @include media('lg') {
+        min-width: 154px;
+        max-width: 154px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    span {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 10.09px;
+      letter-spacing: -0.02em;
+      color: #26262699;
+
+      @include media('lg') {
+        font-size: 9px;
+        line-height: 9px;
+      }
+    }
+
+    h6 {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24.64px;
+      color: $color-under;
+      margin: 8px 0;
+
+      @include media('lg') {
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.87px;
+      letter-spacing: -0.04em;
+      color: $color-under-75;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 
   &_img {
@@ -53,6 +218,10 @@
     position: relative;
     border-radius: 4px;
     overflow: hidden;
+
+    @include media('md') {
+      height: 300px;
+    }
 
     &::before {
       content: '';
@@ -67,51 +236,11 @@
     img {
       width: 100%;
       height: 100%;
+
+      @include media('lg') {
+        object-fit: cover;
+      }
     }
-  }
-
-  h3 {
-    font-size: 42px;
-    font-weight: 500;
-    line-height: 46.2px;
-    letter-spacing: -0.04em;
-    color: $color-under;
-
-    @include media('lg') {
-      font-size: 24px;
-      line-height: 26px;
-    }
-  }
-
-  h6 {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 35.2px;
-    letter-spacing: -0.04em;
-    color: $color-under;
-
-    @include media('lg') {
-      font-size: 16px;
-      line-height: 17px;
-    }
-  }
-
-  p,
-  li,
-  span {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 32.4px;
-    color: $color-under;
-
-    @include media('lg') {
-      font-size: 12px;
-      line-height: 21px;
-    }
-  }
-
-  b {
-    font-weight: 400;
   }
 }
 // news
