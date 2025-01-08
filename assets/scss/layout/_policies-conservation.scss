@@ -1,5 +1,10 @@
 // policies_conservation
 .policies_conservation {
+  margin-top: 30px;
+
+  @include media('lg') {
+    margin-top: 0;
+  }
 
   .container {
     display: flex;
@@ -17,8 +22,84 @@
     }
   }
 
+  &_blocks {
+    margin-top: 15px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px !important;
+      padding: 0;
+    }
+
+    .policies_conservation_block {
+      border-radius: 4px;
+      overflow: hidden;
+      width: 100%;
+      padding: 35px 30px;
+      background-image: url('../images/policies_block1.png');
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: linear-gradient(270deg, rgba(13, 32, 48, 0.3) 0%, #0D2030 100%);
+
+        @include media('lg') {
+          background: linear-gradient(270deg, rgba(13, 32, 48, 0.7) 0%, #0D2030 100%);
+        }
+      }
+    }
+
+    .two {
+      background-image: url('../images/policies_block2.png');
+    }
+
+    .three {
+      background-image: url('../images/policies_block3.png');
+    }
+
+    h6 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 26.4px;
+      letter-spacing: -0.02em;
+      color: $color-white;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
   &_text {
     max-width: 608px;
+
+    .policies_conservation_blocks {
+      display: none;
+
+      .container {
+        width: 100%;
+      }
+
+      .policies_conservation_block {
+        padding: 38px 30px;
+      }
+
+      h6 {
+        font-size: 18px;
+        line-height: 19px;
+      }
+
+      @include media('lg') {
+        display: flex;
+        width: 100%;
+      }
+    }
 
     @include media('lg') {
       max-width: 100%;
@@ -79,6 +160,26 @@
     }
   }
 
+  &_left {
+    width: 608px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 20px;
+    height: 100%;
+
+    @include media('lg') {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .policies_conservation_blocks {
+
+      @include media('lg') {
+        display: none;
+      }
+    }
+  }
+
   .main_home {
     width: 100%;
 
@@ -95,6 +196,7 @@
         line-height: 35.2px;
         letter-spacing: -0.02em;
         color: $color-white;
+        margin: 158px 0 0 0;
 
         br {
           @include media('lg') {

@@ -1699,6 +1699,14 @@ address {
   }
 }
 
+.policies_conservation {
+  margin-top: 30px;
+}
+@media (max-width: 993px) {
+  .policies_conservation {
+    margin-top: 0;
+  }
+}
 .policies_conservation .container {
   display: flex;
   gap: 24px;
@@ -1714,8 +1722,75 @@ address {
     padding: 0;
   }
 }
+.policies_conservation_blocks {
+  margin-top: 15px;
+}
+.policies_conservation_blocks .container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px !important;
+  padding: 0;
+}
+.policies_conservation_blocks .policies_conservation_block {
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  padding: 35px 30px;
+  background-image: url("../images/policies_block1.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.policies_conservation_blocks .policies_conservation_block_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(270deg, rgba(13, 32, 48, 0.3) 0%, #0D2030 100%);
+}
+@media (max-width: 993px) {
+  .policies_conservation_blocks .policies_conservation_block_bg {
+    background: linear-gradient(270deg, rgba(13, 32, 48, 0.7) 0%, #0D2030 100%);
+  }
+}
+.policies_conservation_blocks .two {
+  background-image: url("../images/policies_block2.png");
+}
+.policies_conservation_blocks .three {
+  background-image: url("../images/policies_block3.png");
+}
+.policies_conservation_blocks h6 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26.4px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 2;
+}
 .policies_conservation_text {
   max-width: 608px;
+}
+.policies_conservation_text .policies_conservation_blocks {
+  display: none;
+}
+.policies_conservation_text .policies_conservation_blocks .container {
+  width: 100%;
+}
+.policies_conservation_text .policies_conservation_blocks .policies_conservation_block {
+  padding: 38px 30px;
+}
+.policies_conservation_text .policies_conservation_blocks h6 {
+  font-size: 18px;
+  line-height: 19px;
+}
+@media (max-width: 993px) {
+  .policies_conservation_text .policies_conservation_blocks {
+    display: flex;
+    width: 100%;
+  }
 }
 @media (max-width: 993px) {
   .policies_conservation_text {
@@ -1776,6 +1851,24 @@ address {
     line-height: 14px;
   }
 }
+.policies_conservation_left {
+  width: 608px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 20px;
+  height: 100%;
+}
+@media (max-width: 993px) {
+  .policies_conservation_left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 993px) {
+  .policies_conservation_left .policies_conservation_blocks {
+    display: none;
+  }
+}
 .policies_conservation .main_home {
   width: 100%;
 }
@@ -1790,6 +1883,7 @@ address {
   line-height: 35.2px;
   letter-spacing: -0.02em;
   color: #FFFFFF;
+  margin: 158px 0 0 0;
 }
 @media (max-width: 993px) {
   .policies_conservation .main_home_content .policies_conservation_title br {
