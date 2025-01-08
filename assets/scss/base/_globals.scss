@@ -166,6 +166,35 @@ address {
   }
 }
 
+.white_btn {
+  @include transition();
+
+  @include media('lg') {
+    width: 100%;
+    padding: 12px;
+    gap: 8px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  svg {
+    path {
+      @include transition();
+    }
+  }
+
+  &:hover {
+    background: #302470;
+    color: $color-white;
+
+    svg {
+      path {
+        stroke: $color-white;
+      }
+    }
+  }
+}
+
 .breadcrumb {
   display: flex;
   align-items: center;
