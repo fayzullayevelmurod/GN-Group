@@ -211,6 +211,7 @@ address {
     padding: 20px 18px;
     height: 62px;
     width: 100%;
+    background: transparent;
 
     &:focus {
       outline: none;
@@ -297,6 +298,10 @@ address {
 
   .contact_home {
     background-image: url('../images/contact_home.png');
+  }
+
+  .news_insight {
+    background-image: url('../images/fleet_home.png');
   }
 
   .services_home {
