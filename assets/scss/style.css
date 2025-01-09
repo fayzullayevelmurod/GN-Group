@@ -655,6 +655,23 @@ address {
 .main_home .fleet_home {
   background-image: url("../images/fleet_home.png");
 }
+.main_home .form_home {
+  background-image: url("../images/form_home.png");
+}
+@media (max-width: 993px) {
+  .main_home .form_home .main_title {
+    margin: 182px 0 0 0;
+  }
+}
+.main_home .form_home .main_home_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(270deg, rgba(13, 32, 48, 0.6) 0%, #0D2030 100%);
+}
 .main_home .contact_home {
   background-image: url("../images/contact_home.png");
 }
@@ -2300,6 +2317,108 @@ address {
 }
 .media .media_imgs .media_imgs_right_top .img_block {
   width: 100%;
+}
+
+.form_links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 33px;
+}
+@media (max-width: 993px) {
+  .form_links {
+    display: none;
+  }
+}
+.form_links a {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.form_links a.active span {
+  border: 1px solid #FFFFFF;
+}
+.form_links a.active h6 {
+  color: #FFFFFF;
+}
+.form_links span {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19.8px;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgba(255, 255, 255, 0.2509803922);
+  border-radius: 50%;
+  outline: 4px solid rgba(255, 255, 255, 0.05);
+}
+@media (max-width: 1280px) {
+  .form_links span {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+.form_links h6 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20.72px;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.form_links .line {
+  width: 77px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2509803922);
+}
+@media (max-width: 1280px) {
+  .form_links .line {
+    width: 50px;
+  }
+}
+
+.form_blocks {
+  padding: 70px 0;
+}
+@media (max-width: 993px) {
+  .form_blocks {
+    padding: 20px 0;
+  }
+}
+.form_blocks h3 {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 46.2px;
+  letter-spacing: -0.04em;
+  color: #0D2030;
+  margin-bottom: 18px;
+}
+@media (max-width: 993px) {
+  .form_blocks h3 {
+    font-size: 16px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+}
+
+.form_inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 16px;
+}
+
+.form_input label {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: -0.02em;
+  color: rgba(13, 32, 48, 0.7490196078);
+  margin-bottom: 8px;
 }
 
 .news_insight_top {

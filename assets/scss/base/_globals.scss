@@ -329,6 +329,26 @@ address {
     background-image: url('../images/fleet_home.png');
   }
 
+  .form_home {
+    background-image: url('../images/form_home.png');
+
+    .main_title {
+      @include media('lg') {
+        margin: 182px 0 0 0;
+      }
+    }
+
+    .main_home_bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background: linear-gradient(270deg, rgba(13, 32, 48, 0.6) 0%, #0D2030 100%);
+    }
+  }
+
   .contact_home {
     background-image: url('../images/contact_home.png');
   }
