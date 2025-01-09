@@ -655,6 +655,14 @@ address {
 .main_home .fleet_home {
   background-image: url("../images/fleet_home.png");
 }
+.main_home .sea_home .main_title {
+  margin: 86px 0 110px 0;
+}
+@media (max-width: 993px) {
+  .main_home .sea_home .main_title {
+    margin: 182px 0 0 0;
+  }
+}
 .main_home .form_home {
   background-image: url("../images/form_home.png");
 }
@@ -2666,6 +2674,56 @@ address {
 }
 .form_input .switch_btn label:active:after {
   width: 51px;
+}
+
+.sea_head {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+@media (max-width: 993px) {
+  .sea_head {
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+}
+.sea_head_input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+@media (max-width: 993px) {
+  .sea_head_input {
+    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.sea .form_inputs_block {
+  width: 100%;
+}
+.sea .form_inputs_btns {
+  gap: 8px;
+  padding-top: 0;
+}
+@media (max-width: 993px) {
+  .sea .form_inputs_btns {
+    width: 100%;
+    gap: 6px;
+  }
+}
+.sea .form_inputs_btns button {
+  white-space: nowrap;
+  padding: 20px;
+}
+@media (max-width: 993px) {
+  .sea .form_inputs_btns button {
+    flex: 1;
+    padding: 12px;
+  }
 }
 
 .news_insight_top {

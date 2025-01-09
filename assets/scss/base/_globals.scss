@@ -329,6 +329,16 @@ address {
     background-image: url('../images/fleet_home.png');
   }
 
+  .sea_home {
+    .main_title {
+      margin: 86px 0 110px 0;
+      
+      @include media('lg') {
+        margin: 182px 0 0 0;
+      }
+    }
+  }
+
   .form_home {
     background-image: url('../images/form_home.png');
 

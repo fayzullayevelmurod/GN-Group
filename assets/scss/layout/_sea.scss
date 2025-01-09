@@ -1,0 +1,53 @@
+// sea
+.sea {
+  &_head {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @include media('lg') {
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    &_input {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      @include media('lg') {
+        gap: 6px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  .form_inputs_block {
+    width: 100%;
+  }
+
+  .form_inputs_btns {
+    gap: 8px;
+    padding-top: 0;
+
+    @include media('lg') {
+      width: 100%;
+      gap: 6px;
+    }
+
+    button {
+      white-space: nowrap;
+      padding: 20px;
+
+      @include media('lg') {
+        flex: 1;
+        padding: 12px;
+      }
+    }
+  }
+}
+// sea
