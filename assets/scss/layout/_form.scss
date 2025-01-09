@@ -90,10 +90,131 @@
   }
 }
 
+.line {
+  width: 100%;
+  height: 1px;
+  background: #0D20301A;
+
+  @include media('lg') {
+    display: none;
+  }
+}
+
 .form_inputs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px 16px;
+  padding-bottom: 70px;
+
+  @include media('lg') {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 20px;
+  }
+
+  &_top {
+    margin-top: 70px;
+
+    @include media('lg') {
+      margin-top: 20px;
+      display: none;
+    }
+  }
+
+  &_end_in {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+
+    @include media('lg') {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &_end {
+    padding: 70px 0;
+
+    @include media('lg') {
+      padding: 20px 0;
+      display: none;
+    }
+
+    .form_inputs {
+      padding-bottom: 18px;
+    }
+  }
+
+  &_center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0;
+
+    @include media('lg') {
+      display: none;
+      padding: 20px 0;
+      flex-direction: column;
+    }
+
+    button {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.94px;
+      letter-spacing: -0.04em;
+      color: $color-under-75;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      @include media('lg') {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  &_btns {
+    display: flex;
+    gap: 16px;
+    padding-top: 30px;
+
+    @include media('lg') {
+      gap: 8px;
+      padding-top: 0;
+    }
+
+    button {
+      padding: 20px 60px;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 21.94px;
+      letter-spacing: -0.04em;
+      color: $color-white;
+      border-radius: 4px;
+      background: #302470;
+      @include transition();
+      border: 1px solid #FFFFFF26;
+
+      @include media('lg') {
+        flex: 1;
+        font-size: 12px;
+        line-height: 14px;
+        padding: 12px;
+      }
+
+      &:hover {
+        background: transparent;
+        color: #302470;
+        border: 1px solid #302470;
+      }
+    }
+  }
+}
+
+.none {
+  @include media('lg') {
+    display: none;
+  }
 }
 
 .form_input {
@@ -104,10 +225,142 @@
     letter-spacing: -0.02em;
     color: $color-under-75;
     margin-bottom: 8px;
+
+    @include media('lg') {
+      font-size: 10px;
+      line-height: 18px;
+    }
+  }
+
+  .calendar {
+    position: relative;
+
+    .main_input {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      position: relative;
+      width: 100%;
+
+      &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+      }
+    }
+
+    svg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 18px;
+      margin: auto;
+
+      @include media('lg') {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .switch_btn {
+    padding: 15px 18px;
+    border-radius: 4px;
+    border: 1px solid #0D20301A;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @include media('lg') {
+      border: none;
+      padding: 0;
+    }
+
+    span {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 21.94px;
+      letter-spacing: -0.04em;
+      color: $color-dark;
+
+      @include media('lg') {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    .switch_text1,
+    .switch_text2 {
+      display: none;
+    }
+
+    .switch_text1.active {
+      display: inline;
+    }
+
+    .switch_text2.active {
+      display: inline;
+    }
+
+    input[type=checkbox]{
+      height: 0;
+      width: 0;
+      visibility: hidden;
+      position: absolute;
+    }
+
+    label {
+      cursor: pointer;
+      text-indent: -9999px;
+      width: 51px;
+      height: 31px;
+      background: grey;
+      display: block;
+      border-radius: 100px;
+      position: relative;
+      margin-bottom: 0;
+
+      @include media('lg') {
+        width: 38px;
+        height: 24px;
+      }
+    }
+
+    label:after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      margin: auto;
+      width: 27px;
+      height: 27px;
+      background: $color-white;
+      border-radius: 90px;
+      transition: 0.3s;
+
+      @include media('lg') {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    input:checked + label {
+      background: #302470;
+    }
+
+    input:checked + label:after {
+      left: calc(100% - 2px);
+      transform: translateX(-100%);
+    }
+
+    label:active:after {
+      width: 51px;
+    }
   }
 }
 
-.calendar {
-  
-}
 // form_page

@@ -2406,10 +2406,131 @@ address {
   }
 }
 
+.line {
+  width: 100%;
+  height: 1px;
+  background: rgba(13, 32, 48, 0.1019607843);
+}
+@media (max-width: 993px) {
+  .line {
+    display: none;
+  }
+}
+
 .form_inputs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px 16px;
+  padding-bottom: 70px;
+}
+@media (max-width: 993px) {
+  .form_inputs {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 20px;
+  }
+}
+.form_inputs_top {
+  margin-top: 70px;
+}
+@media (max-width: 993px) {
+  .form_inputs_top {
+    margin-top: 20px;
+    display: none;
+  }
+}
+.form_inputs_end_in {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+@media (max-width: 993px) {
+  .form_inputs_end_in {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.form_inputs_end {
+  padding: 70px 0;
+}
+@media (max-width: 993px) {
+  .form_inputs_end {
+    padding: 20px 0;
+    display: none;
+  }
+}
+.form_inputs_end .form_inputs {
+  padding-bottom: 18px;
+}
+.form_inputs_center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 0;
+}
+@media (max-width: 993px) {
+  .form_inputs_center {
+    display: none;
+    padding: 20px 0;
+    flex-direction: column;
+  }
+}
+.form_inputs_center button {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+  letter-spacing: -0.04em;
+  color: rgba(13, 32, 48, 0.7490196078);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 993px) {
+  .form_inputs_center button {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.form_inputs_btns {
+  display: flex;
+  gap: 16px;
+  padding-top: 30px;
+}
+@media (max-width: 993px) {
+  .form_inputs_btns {
+    gap: 8px;
+    padding-top: 0;
+  }
+}
+.form_inputs_btns button {
+  padding: 20px 60px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.94px;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  border-radius: 4px;
+  background: #302470;
+  transition: 0.3s linear;
+  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+}
+@media (max-width: 993px) {
+  .form_inputs_btns button {
+    flex: 1;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 12px;
+  }
+}
+.form_inputs_btns button:hover {
+  background: transparent;
+  color: #302470;
+  border: 1px solid #302470;
+}
+
+@media (max-width: 993px) {
+  .none {
+    display: none;
+  }
 }
 
 .form_input label {
@@ -2419,6 +2540,132 @@ address {
   letter-spacing: -0.02em;
   color: rgba(13, 32, 48, 0.7490196078);
   margin-bottom: 8px;
+}
+@media (max-width: 993px) {
+  .form_input label {
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
+.form_input .calendar {
+  position: relative;
+}
+.form_input .calendar .main_input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  width: 100%;
+}
+.form_input .calendar .main_input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+.form_input .calendar svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 18px;
+  margin: auto;
+}
+@media (max-width: 993px) {
+  .form_input .calendar svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+.form_input .switch_btn {
+  padding: 15px 18px;
+  border-radius: 4px;
+  border: 1px solid rgba(13, 32, 48, 0.1019607843);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 993px) {
+  .form_input .switch_btn {
+    border: none;
+    padding: 0;
+  }
+}
+.form_input .switch_btn span {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.94px;
+  letter-spacing: -0.04em;
+  color: #0D2030;
+}
+@media (max-width: 993px) {
+  .form_input .switch_btn span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.form_input .switch_btn .switch_text1,
+.form_input .switch_btn .switch_text2 {
+  display: none;
+}
+.form_input .switch_btn .switch_text1.active {
+  display: inline;
+}
+.form_input .switch_btn .switch_text2.active {
+  display: inline;
+}
+.form_input .switch_btn input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.form_input .switch_btn label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 51px;
+  height: 31px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  margin-bottom: 0;
+}
+@media (max-width: 993px) {
+  .form_input .switch_btn label {
+    width: 38px;
+    height: 24px;
+  }
+}
+.form_input .switch_btn label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  margin: auto;
+  width: 27px;
+  height: 27px;
+  background: #FFFFFF;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+@media (max-width: 993px) {
+  .form_input .switch_btn label:after {
+    width: 20px;
+    height: 20px;
+  }
+}
+.form_input .switch_btn input:checked + label {
+  background: #302470;
+}
+.form_input .switch_btn input:checked + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+.form_input .switch_btn label:active:after {
+  width: 51px;
 }
 
 .news_insight_top {
