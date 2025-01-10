@@ -49,5 +49,184 @@
       }
     }
   }
+
+  &_list_in {
+    overflow-x: scroll;
+
+    @include media('lg') {
+      padding: 0 20px;
+    }
+
+    .container {
+      @include media('lg') {
+        padding: 0;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &_list {
+    width: 1240px;
+
+    @include media('lg') {
+      padding-right: 20px;
+    }
+
+    &_head {
+      border: 1px solid #E1E8F0;
+      border-radius: 4px;
+      background: $color-white;
+      padding: 17px 10px;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 9px;
+
+      @include media('lg') {
+        height: 40px;
+        padding: 9px 10px;
+      }
+
+      span {
+        white-space: nowrap;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: -0.02em;
+        color: $color-under-75;
+
+        @include media('lg') {
+          font-size: 12px;
+          line-height: 21px;
+        }
+      }
+    }
+
+    &_body {
+      padding: 17px 10px;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 9px;
+
+      &:nth-child(odd) {
+        background: #F5F5F5;
+      }
+
+      span {
+        white-space: nowrap;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 27px;
+        letter-spacing: -0.02em;
+        color: $color-dark;
+      }
+
+      .flag {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .sea_flag {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+      }
+    }
+
+    .number {
+      width: 20px;
+      flex-shrink: 0;
+    }
+
+    .name {
+      width: 153px;
+    }
+
+    .card {
+      width: 55px;
+    }
+
+    .flag {
+      flex-shrink: 0;
+      width: 104px;
+    }
+
+    .duration {
+      width: 80px;
+    }
+
+    .type {
+      width: 118px;
+    }
+
+    .gt {
+      width: 62px;
+    }
+
+    .dwt {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      width: 63px;
+    }
+
+    .upcoming {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      width: 105px;
+    }
+
+    .deadline {
+      width: 119px;
+    }
+
+    button {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 18.29px;
+      letter-spacing: -0.04em;
+      color: $color-white;
+      background: #302470;
+      border: 1px solid #FFFFFF26;
+      padding: 8px 20px;
+      border-radius: 8px;
+      @include transition();
+
+      &:hover {
+        background: transparent;
+        border: 1px solid $color-dark;
+        color: $color-dark;
+      }
+    }
+
+    a {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 18.29px;
+      letter-spacing: -0.04em;
+      color: #302470;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      justify-content: center;
+      padding: 8px 15px;
+      border: 1px solid transparent;
+      @include transition();
+      border-radius: 8px;
+
+      &:hover {
+        border: 1px solid #302470;
+      }
+    }
+  }
+
 }
 // sea

@@ -747,6 +747,13 @@
         width: calc(100% - 24px);
         background: #F0F3F7;
       }
+
+
+      &:last-child {
+        &::before {
+          display: none;
+        }
+      }
     }
 
     &_btn {
