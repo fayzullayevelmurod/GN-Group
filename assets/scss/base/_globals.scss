@@ -276,6 +276,29 @@ address {
   }
 }
 
+.section_title {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20.72px;
+  letter-spacing: -0.04em;
+  color: $color-coral;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  @include media('lg') {
+    font-size: 12px;
+    line-height: 14px;
+    gap: 12px;
+  }
+}
+
 .main_home {
   &_in {
     border-radius: 4px;
@@ -332,7 +355,7 @@ address {
   .sea_home {
     .main_title {
       margin: 86px 0 110px 0;
-      
+
       @include media('lg') {
         margin: 182px 0 0 0;
       }

@@ -25,18 +25,22 @@ tabs.forEach(tab => {
 // tabs
 
 // switch
-const switchBtn = document.querySelector('.switch_btn');
-const text1 = document.querySelector('.switch_text1');
-const text2 = document.querySelector('.switch_text2');
-const checkbox = document.querySelector('#switch');
+document.addEventListener('DOMContentLoaded', () => {
+  const switchBtn = document.querySelector('.switch_btn');
+  const text1 = document.querySelector('.switch_text1');
+  const text2 = document.querySelector('.switch_text2');
+  const checkbox = document.querySelector('#switch');
 
-checkbox.addEventListener('change', () => {
-  if (checkbox.checked) {
-    text1.classList.add('active');
-    text2.classList.remove('active');
-  } else {
-    text1.classList.remove('active');
-    text2.classList.add('active');
+  if (switchBtn && text1 && text2 && checkbox) {
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) {
+        text1.classList.add('active');
+        text2.classList.remove('active');
+      } else {
+        text1.classList.remove('active');
+        text2.classList.add('active');
+      }
+    });
   }
 });
 // switch
