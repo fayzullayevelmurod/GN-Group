@@ -742,6 +742,33 @@ address {
   background: linear-gradient(270deg, rgba(13, 32, 48, 0) 0%, #0D2030 100%);
 }
 
+.slider_btn {
+  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+  border-radius: 4px;
+  -webkit-backdrop-filter: blur(18px);
+          backdrop-filter: blur(18px);
+  padding: 10px 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s linear;
+}
+@media (max-width: 993px) {
+  .slider_btn svg {
+    width: 13px;
+    height: 13px;
+  }
+}
+@media (max-width: 993px) {
+  .slider_btn {
+    padding: 14px 23px;
+  }
+}
+.slider_btn:hover {
+  color: #FFFFFF;
+  background: #302470;
+}
+
 .paginations {
   margin-top: 30px;
   display: flex;
@@ -3068,11 +3095,119 @@ address {
   stroke: #FFFFFF;
 }
 
+.company {
+  height: 720px;
+}
+@media (max-width: 993px) {
+  .company {
+    height: 546px;
+  }
+}
+.company .section_title {
+  align-items: start;
+}
+.company .container {
+  height: 100%;
+  position: relative;
+  padding: 124px 60px;
+  background: #0D2030;
+}
+@media (max-width: 993px) {
+  .company .container {
+    padding: 30px 20px;
+  }
+}
+.company .fleet_btns {
+  bottom: 296px;
+}
+@media (max-width: 993px) {
+  .company .fleet_btns {
+    bottom: 112px;
+  }
+}
+@media (max-width: 768px) {
+  .company .fleet_btns {
+    position: absolute;
+  }
+}
+.company p {
+  margin: 65px 0 32px 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32.4px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.8509803922);
+  max-width: 752px;
+}
+@media (max-width: 993px) {
+  .company p {
+    font-size: 12px;
+    line-height: 21px;
+    margin: 172px 0 0 0;
+  }
+}
+.company .companySwiper {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  width: 100%;
+  height: 158px;
+  padding-left: 60px;
+}
+@media (max-width: 993px) {
+  .company .companySwiper {
+    padding-left: 0;
+    bottom: 30px;
+    left: 30px;
+    height: 50px;
+  }
+}
+.company .companySwiper h6 {
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 79.2px;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.1019607843);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1019607843);
+  transition: 0.3s linear;
+}
+@media (max-width: 993px) {
+  .company .companySwiper h6 {
+    font-size: 32px;
+    line-height: 25px;
+  }
+}
+.company .companySwiper .swiper-slide {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+.company .companySwiper .swiper-slide-active h6 {
+  font-size: 144px;
+  font-weight: 500;
+  line-height: 158.4px;
+  letter-spacing: -0.04em;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #FFFFFF;
+}
+@media (max-width: 993px) {
+  .company .companySwiper .swiper-slide-active h6 {
+    font-size: 72px;
+    line-height: 79px;
+  }
+}
+
 .achived .container {
   display: flex;
 }
 @media (max-width: 993px) {
   .achived .container {
+    padding: 0;
     flex-direction: column;
   }
 }
@@ -3287,6 +3422,191 @@ address {
   .achived_bottom h6 {
     font-size: 18px;
     line-height: 20px;
+  }
+}
+
+.fleet {
+  height: 509px;
+}
+@media (max-width: 768px) {
+  .fleet {
+    background: #0D2030;
+    height: auto;
+    padding: 30px 20px;
+  }
+}
+.fleet_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(13, 32, 48, 0) 0%, #0D2030 100%);
+}
+@media (max-width: 768px) {
+  .fleet_bg {
+    display: none;
+  }
+}
+.fleet .section_title {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  z-index: 4;
+  color: #F7C033;
+}
+@media (max-width: 993px) {
+  .fleet .section_title {
+    top: 30px;
+    left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .fleet .section_title {
+    display: block;
+    position: static;
+    margin-bottom: 17px;
+  }
+}
+.fleet .container {
+  height: 100%;
+  position: relative;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+}
+@media (max-width: 993px) {
+  .fleet .container {
+    padding: 0;
+  }
+}
+.fleet .fleetSwiper {
+  height: 100%;
+}
+.fleet_block {
+  padding: 60px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 993px) {
+  .fleet_block {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .fleet_block {
+    padding: 0;
+  }
+}
+.fleet .fleet_block_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  .fleet .fleet_block_img {
+    display: block;
+    position: static;
+  }
+}
+@media (max-width: 480px) {
+  .fleet .fleet_block_img {
+    height: 159px;
+  }
+}
+.fleet_btns {
+  display: flex;
+  gap: 12px;
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  z-index: 4;
+}
+@media (max-width: 993px) {
+  .fleet_btns {
+    bottom: 30px;
+    left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .fleet_btns {
+    display: flex;
+    position: static;
+  }
+}
+.fleet h6 {
+  position: relative;
+  z-index: 4;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.94px;
+  letter-spacing: 0.24em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+@media (max-width: 993px) {
+  .fleet h6 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .fleet h6 {
+    margin-top: 20px;
+  }
+}
+.fleet ul {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 291px;
+}
+@media (max-width: 768px) {
+  .fleet ul {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
+.fleet ul li {
+  height: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.fleet ul li span {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.8509803922);
+}
+@media (max-width: 768px) {
+  .fleet ul li span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.fleet ul li p {
+  text-align: right;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .fleet ul li p {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 

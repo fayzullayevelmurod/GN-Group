@@ -1,3 +1,114 @@
+// company
+.company {
+  height: 720px;
+
+  @include media('lg') {
+    height: 546px;
+  }
+
+  .section_title {
+    align-items: start;
+  }
+
+  .container {
+    height: 100%;
+    position: relative;
+    padding: 124px 60px;
+    background: $color-dark;
+
+    @include media('lg') {
+      padding: 30px 20px;
+    }
+  }
+
+  .fleet_btns {
+    bottom: 296px;
+
+    @include media('lg') {
+      bottom: 112px;
+    }
+
+    @include media('md') {
+      position: absolute;
+    }
+  }
+
+  p {
+    margin: 65px 0 32px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32.4px;
+    letter-spacing: -0.02em;
+    color: #FFFFFFD9;
+    max-width: 752px;
+
+    @include media('lg') {
+      font-size: 12px;
+      line-height: 21px;
+      margin: 172px 0 0 0;
+    }
+  }
+
+  .companySwiper {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    width: 100%;
+    height: 158px;
+    padding-left: 60px;
+
+    @include media('lg') {
+      padding-left: 0;
+      bottom: 30px;
+      left: 30px;
+      height: 50px;
+    }
+
+    h6 {
+      font-size: 72px;
+      font-weight: 500;
+      line-height: 79.2px;
+      letter-spacing: -0.04em;
+      color: #FFFFFF1A;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px #FFFFFF1A;
+      @include transition();
+
+      @include media('lg') {
+        font-size: 32px;
+        line-height: 25px;
+      }
+    }
+
+    .swiper-slide {
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+    }
+
+    .swiper-slide-active {
+      h6 {
+        font-size: 144px;
+        font-weight: 500;
+        line-height: 158.4px;
+        letter-spacing: -0.04em;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px $color-white;
+
+        @include media('lg') {
+          font-size: 72px;
+          line-height: 79px;
+        }
+      }
+    }
+  }
+}
+// company
+
 // achived
 .achived {
 
@@ -5,6 +116,7 @@
     display: flex;
 
     @include media('lg') {
+      padding: 0;
       flex-direction: column;
     }
   }
@@ -229,6 +341,188 @@
   }
 }
 // achived
+
+// fleet
+.fleet {
+  height: 509px;
+
+  @include media('md') {
+    background: #0D2030;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  &_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, rgba(13, 32, 48, 0) 0%, #0D2030 100%);
+
+    @include media('md') {
+      display: none;
+    }
+  }
+
+  .section_title {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 4;
+    color: $color-coral;
+
+    @include media('lg') {
+      top: 30px;
+      left: 20px;
+    }
+
+    @include media('md') {
+      display: block;
+      position: static;
+      margin-bottom: 17px;
+    }
+  }
+
+  .container {
+    height: 100%;
+    position: relative;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+
+    @include media('lg') {
+      padding: 0;
+    }
+  }
+
+  .fleetSwiper {
+    height: 100%;
+  }
+
+  &_block {
+    padding: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include media('lg') {
+      padding: 30px 20px;
+    }
+
+    @include media('md') {
+      padding: 0;
+    }
+  }
+
+  .fleet_block_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include media('md') {
+      display: block;
+      position: static;
+    }
+
+    @include media('xs') {
+      height: 159px;
+    }
+  }
+
+  &_btns {
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    z-index: 4;
+
+    @include media('lg') {
+      bottom: 30px;
+      left: 20px;
+    }
+
+    @include media('md') {
+      display: flex;
+      position: static;
+    }
+  }
+
+  h6 {
+    position: relative;
+    z-index: 4;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    letter-spacing: 0.24em;
+    color: $color-white;
+    margin-bottom: 20px;
+
+    @include media('lg') {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    @include media('md') {
+      margin-top: 20px;
+    }
+  }
+
+  ul {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 291px;
+
+    @include media('md') {
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+
+    li {
+      height: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+
+      span {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: -0.02em;
+        color: #FFFFFFD9;
+
+        @include media('md') {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      p {
+        text-align: right;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: -0.02em;
+        color: $color-white;
+
+        @include media('md') {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+// fleet
 
 // news_section
 .news_section {

@@ -45,25 +45,57 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // switch
 
-let swiper = new Swiper(".treatmentsSwiper", {
-  slidesPerView: 1.10,
-  spaceBetween: 28,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+let swiper = new Swiper(".fleetSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".fleet-button-next",
+    prevEl: ".fleet-button-prev",
+  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
+  // breakpoints: {
+  //   640: {
+  //     slidesPerView: 2.2,
+  //     spaceBetween: 28,
+  //   },
+  //   993: {
+  //     slidesPerView: 3.2,
+  //     spaceBetween: 28,
+  //   },
+  //   1200: {
+  //     slidesPerView: 3.6,
+  //     spaceBetween: 40,
+  //   },
+  // },
+});
+
+let swiper2 = new Swiper(".companySwiper", {
+  slidesPerView: 2.2,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    nextEl: ".company-button-next",
+    prevEl: ".company-button-prev",
   },
   breakpoints: {
+    360: {
+      slidesPerView: 3.2,
+      spaceBetween: 32,
+    },
     640: {
-      slidesPerView: 2.2,
-      spaceBetween: 28,
+      slidesPerView: 4.2,
+      spaceBetween: 32,
     },
     993: {
-      slidesPerView: 3.2,
-      spaceBetween: 28,
+      slidesPerView: 4.2,
+      spaceBetween: 32,
     },
     1200: {
-      slidesPerView: 3.6,
-      spaceBetween: 40,
+      slidesPerView: 4.3,
+      spaceBetween: 80,
     },
   },
 });

@@ -429,6 +429,33 @@ address {
   }
 }
 
+.slider_btn {
+  border: 1px solid #FFFFFF26;
+  border-radius: 4px;
+  backdrop-filter: blur(18px);
+  padding: 10px 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include transition();
+
+  svg {
+    @include media('lg') {
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  @include media('lg') {
+    padding: 14px 23px;
+  }
+
+  &:hover {
+    color: $color-white;
+    background: #302470;
+  }
+}
+
 .paginations {
   margin-top: 30px;
   display: flex;
