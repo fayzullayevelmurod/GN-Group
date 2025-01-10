@@ -99,3 +99,17 @@ let swiper2 = new Swiper(".companySwiper", {
     },
   },
 });
+
+let swiper3 = new Swiper(".homeSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  effect: "fade",
+  navigation: {
+    nextEl: ".home-button-next",
+    prevEl: ".home-button-prev",
+  },
+  pagination: {
+    el: ".home-pagination",
+    clickable: true,
+  },
+});
