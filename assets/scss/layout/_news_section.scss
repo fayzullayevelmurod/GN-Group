@@ -30,6 +30,12 @@
       letter-spacing: -0.02em;
       color: $color-white;
       margin: 38px 0;
+
+      @include media('lg') {
+        font-size: 12px;
+        line-height: 14px;
+        margin: 20px 0;
+      }
     }
   }
 
@@ -49,6 +55,10 @@
       flex-direction: column;
       gap: 78px;
 
+      @include media('lg') {
+        gap: 84px;
+      }
+
         li {
           display: flex;
           align-items: center;
@@ -61,6 +71,11 @@
             color: #FFFFFFD9;
             display: flex;
             align-items: center;
+
+            @include media('lg') {
+              font-size: 12px;
+              line-height: 14px;
+            }
 
             span {
               color: #FFFFFF40;
@@ -93,6 +108,11 @@
         inset: 20px;
       }
 
+      @include media('xs') {
+        gap: 10px;
+        padding-right: 40px;
+      }
+
       li {
         width: 80px;
         padding: 14px 20px;
@@ -103,6 +123,16 @@
         justify-content: space-between;
         gap: 10px;
         background: #302470;
+
+        @include media('lg') {
+          width: 60px;
+          padding: 18px 12px 14px 12px;
+        }
+
+        @include media('xs') {
+          width: 50px;
+          padding: 12px;
+        }
       }
 
       .one {
@@ -111,6 +141,10 @@
 
       .two {
         height: 97%;
+
+        @include media('lg') {
+          height: 99%;
+        }
       }
 
       .three {
@@ -119,6 +153,10 @@
 
       .four {
         height: 49%;
+
+        @include media('lg') {
+          height: 50%;
+        }
       }
 
       span {
@@ -128,6 +166,11 @@
         font-weight: 400;
         line-height: 25.2px;
         letter-spacing: -0.02em;
+
+        @include media('lg') {
+          font-size: 14px;
+          line-height: 16px;
+        }
 
         b {
           font-weight: 300;
@@ -143,6 +186,11 @@
         color: #FFFFFFD9;
         writing-mode: vertical-lr;
         transform: rotate(180deg);
+
+        @include media('lg') {
+          font-size: 12px;
+          line-height: 14px;
+        }
       }
     }
   }
@@ -152,12 +200,31 @@
     align-items: center;
     gap: 12px;
 
+    .archived_icon {
+      @include media('lg') {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .archived_line {
+      @include media('lg') {
+        width: 6px;
+        height: 32px;
+      }
+    }
+
     h6 {
       font-size: 22px;
       font-weight: 500;
       line-height: 24.2px;
       letter-spacing: -0.02em;
       color: $color-coral;
+
+      @include media('lg') {
+        font-size: 18px;
+        line-height: 20px;
+      }
     }
   }
 }

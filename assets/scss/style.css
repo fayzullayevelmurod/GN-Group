@@ -3099,6 +3099,13 @@ address {
   color: #FFFFFF;
   margin: 38px 0;
 }
+@media (max-width: 993px) {
+  .achived_left p {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 20px 0;
+  }
+}
 .achived_right {
   width: 713px;
   padding: 60px;
@@ -3116,6 +3123,11 @@ address {
   flex-direction: column;
   gap: 78px;
 }
+@media (max-width: 993px) {
+  .achived_right_line {
+    gap: 84px;
+  }
+}
 .achived_right_line li {
   display: flex;
   align-items: center;
@@ -3128,6 +3140,12 @@ address {
   color: rgba(255, 255, 255, 0.8509803922);
   display: flex;
   align-items: center;
+}
+@media (max-width: 993px) {
+  .achived_right_line li p {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 .achived_right_line li p span {
   color: rgba(255, 255, 255, 0.2509803922);
@@ -3157,6 +3175,12 @@ address {
     inset: 20px;
   }
 }
+@media (max-width: 480px) {
+  .achived_right_blocks {
+    gap: 10px;
+    padding-right: 40px;
+  }
+}
 .achived_right_blocks li {
   width: 80px;
   padding: 14px 20px;
@@ -3168,17 +3192,39 @@ address {
   gap: 10px;
   background: #302470;
 }
+@media (max-width: 993px) {
+  .achived_right_blocks li {
+    width: 60px;
+    padding: 18px 12px 14px 12px;
+  }
+}
+@media (max-width: 480px) {
+  .achived_right_blocks li {
+    width: 50px;
+    padding: 12px;
+  }
+}
 .achived_right_blocks .one {
   height: 45%;
 }
 .achived_right_blocks .two {
   height: 97%;
 }
+@media (max-width: 993px) {
+  .achived_right_blocks .two {
+    height: 99%;
+  }
+}
 .achived_right_blocks .three {
   height: 79%;
 }
 .achived_right_blocks .four {
   height: 49%;
+}
+@media (max-width: 993px) {
+  .achived_right_blocks .four {
+    height: 50%;
+  }
 }
 .achived_right_blocks span {
   white-space: nowrap;
@@ -3187,6 +3233,12 @@ address {
   font-weight: 400;
   line-height: 25.2px;
   letter-spacing: -0.02em;
+}
+@media (max-width: 993px) {
+  .achived_right_blocks span {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 .achived_right_blocks span b {
   font-weight: 300;
@@ -3201,10 +3253,28 @@ address {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
 }
+@media (max-width: 993px) {
+  .achived_right_blocks p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 .achived_bottom {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+@media (max-width: 993px) {
+  .achived_bottom .archived_icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 993px) {
+  .achived_bottom .archived_line {
+    width: 6px;
+    height: 32px;
+  }
 }
 .achived_bottom h6 {
   font-size: 22px;
@@ -3212,6 +3282,12 @@ address {
   line-height: 24.2px;
   letter-spacing: -0.02em;
   color: #F7C033;
+}
+@media (max-width: 993px) {
+  .achived_bottom h6 {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 
 .news_section {
