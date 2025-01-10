@@ -21,6 +21,22 @@
     }
   }
 
+  .company_bg {
+    position: absolute;
+    top: -157px;
+    right: -194px;
+    min-width: 1036px;
+    min-height: 659px;
+    flex-shrink: 0;
+
+    @include media('lg') {
+      min-width: 460px;
+      right: -134px;
+      top: 35px;
+      min-height: 293px;
+    }
+  }
+
   .fleet_btns {
     bottom: 296px;
 

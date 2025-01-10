@@ -3117,6 +3117,22 @@ address {
     padding: 30px 20px;
   }
 }
+.company .company_bg {
+  position: absolute;
+  top: -157px;
+  right: -194px;
+  min-width: 1036px;
+  min-height: 659px;
+  flex-shrink: 0;
+}
+@media (max-width: 993px) {
+  .company .company_bg {
+    min-width: 460px;
+    right: -134px;
+    top: 35px;
+    min-height: 293px;
+  }
+}
 .company .fleet_btns {
   bottom: 296px;
 }
