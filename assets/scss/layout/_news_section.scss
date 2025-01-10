@@ -1,3 +1,168 @@
+// achived
+.achived {
+
+  .container {
+    display: flex;
+
+    @include media('lg') {
+      flex-direction: column;
+    }
+  }
+
+  &_left {
+    background: #2C1F6C;
+    padding: 60px;
+    width: 527px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include media('lg') {
+      width: 100%;
+      padding: 30px 20px;
+    }
+
+    p {
+      display: flex;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25.2px;
+      letter-spacing: -0.02em;
+      color: $color-white;
+      margin: 38px 0;
+    }
+  }
+
+  &_right {
+    width: 713px;
+    padding: 60px;
+    background: #302470;
+    position: relative;
+
+    @include media('lg') {
+      width: 100%;
+      padding: 20px;
+    }
+
+    &_line {
+      display: flex;
+      flex-direction: column;
+      gap: 78px;
+
+        li {
+          display: flex;
+          align-items: center;
+
+          p {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 25.2px;
+            letter-spacing: -0.02em;
+            color: #FFFFFFD9;
+            display: flex;
+            align-items: center;
+
+            span {
+              color: #FFFFFF40;
+            }
+          }
+
+          .line {
+            width: 100%;
+            background: #FFFFFF0D;
+            height: 1px;
+
+            @include media('lg') {
+              display: block;
+            }
+          }
+        }
+    }
+
+    &_blocks {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      position: absolute;
+      inset: 60px;
+      bottom: 73px;
+      padding-right: 75px;
+
+      @include media('lg') {
+        inset: 20px;
+      }
+
+      li {
+        width: 80px;
+        padding: 14px 20px;
+        border: 1px solid #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        background: #302470;
+      }
+
+      .one {
+        height: 45%;
+      }
+
+      .two {
+        height: 97%;
+      }
+
+      .three {
+        height: 79%;
+      }
+
+      .four {
+        height: 49%;
+      }
+
+      span {
+        white-space: nowrap;
+        color: $color-coral;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25.2px;
+        letter-spacing: -0.02em;
+
+        b {
+          font-weight: 300;
+          color: #FFFFFF40;
+        }
+      }
+
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: -0.02em;
+        color: #FFFFFFD9;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &_bottom {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    h6 {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 24.2px;
+      letter-spacing: -0.02em;
+      color: $color-coral;
+    }
+  }
+}
+// achived
+
 // news_section
 .news_section {
   padding: 40px 0 58px 0;
