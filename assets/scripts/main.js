@@ -116,10 +116,10 @@ let swiper3 = new Swiper(".homeSwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
   effect: "fade",
-  autoplay: {
-    delay: 6000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 6000,
+  //   disableOnInteraction: false,
+  // },
   navigation: {
     nextEl: ".home-button-next",
     prevEl: ".home-button-prev",

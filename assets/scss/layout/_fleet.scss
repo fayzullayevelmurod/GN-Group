@@ -124,6 +124,48 @@
           transform: scale(1.1);
         }
       }
+
+      .main_btn {
+        svg {
+          path {
+            transition: .3s ease;
+            stroke: $color-white;
+          }
+
+          &:last-child {
+            transform: translateX(300px);
+          }
+
+          &:nth-child(1) {
+            left: 33%;
+
+            @include media('lg') {
+              left: 35%;
+            }
+
+            @include media('md') {
+              left: 40%;
+            }
+
+            @include media('xs') {
+              left: 30%;
+            }
+          }
+        }
+
+        span {
+          color: $color-white;
+          transform: translateX(20px);
+
+          @include media('lg') {
+            transform: translateX(15px);
+          }
+        }
+
+        &::before {
+          height: 100%;
+        }
+      }
     }
 
     &_img_block {
@@ -197,11 +239,6 @@
     }
 
     &_btn {
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 21.94px;
-      letter-spacing: -0.04em;
-      color: $color-under;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -211,17 +248,24 @@
       border: 1px solid #0D20300D;
       @include transition();
 
-      &:hover {
-        svg {
-          path {
-            stroke: $color-white;
-          }
-        }
+      @include media('lg') {
+        height: 40px;
+      }
 
-        flex-direction: row-reverse;
-        color: $color-white;
-        background: #302470;
-        border: 1px solid #FFFFFF26
+      span {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 21.94px;
+        letter-spacing: -0.04em;
+        color: $color-under;
+        transition: .2s ease;
+
+        @include media('lg') {
+          font-size: 12px;
+          line-height: 14px;
+          padding: 13px;
+          border-radius: 4px;
+        }
       }
 
       svg {
@@ -229,13 +273,6 @@
           width: 12px;
           height: 12px;
         }
-      }
-
-      @include media('lg') {
-        font-size: 12px;
-        line-height: 14px;
-        padding: 13px;
-        border-radius: 4px;
       }
     }
   }

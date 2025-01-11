@@ -308,6 +308,10 @@
       padding: 20px 38px;
       @include transition();
 
+      &::before {
+        display: none;
+      }
+
       @include media('lg') {
         gap: 8px;
         padding: 12px;
@@ -336,6 +340,26 @@
         svg {
           path {
             stroke: $color-white;
+          }
+
+          &:last-child {
+            transform: translateX(200px);
+          }
+
+          &:nth-child(1) {
+            left: 35px;
+
+            @include media('lg') {
+              left: 40%;
+            }
+
+            @include media('md') {
+              left: 30%;
+            }
+
+            @include media('xs') {
+              left: 30px;
+            }
           }
         }
       }
