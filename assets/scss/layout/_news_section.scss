@@ -34,6 +34,17 @@
       height: auto;
     }
 
+    .swiper-slide-active {
+      .home_in_text {
+
+        h3,
+        p,
+        .main_btn {
+          animation: slideInFromLeft 0.3s ease-out;
+        }
+      }
+    }
+
     .swiper-notification {
       display: none;
     }
@@ -80,6 +91,8 @@
       }
 
       .home_icon {
+        transition: .2s ease;
+
         @include media('lg') {
           display: none;
         }
@@ -154,6 +167,18 @@
         }
       }
     }
+
+    @keyframes slideInFromLeft {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
 
   }
 
@@ -231,6 +256,7 @@
         width: 40px;
         height: 1px;
         background: #FFFFFF80;
+        @include transition();
 
         @include media('lg') {
           display: none;
@@ -244,6 +270,7 @@
         width: 7px;
         height: 100%;
         background: #FFFFFF26;
+        @include transition();
 
         @include media('lg') {
           display: none;

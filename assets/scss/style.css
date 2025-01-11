@@ -3563,6 +3563,11 @@ address {
 .home .homeSwiper .swiper-slide {
   height: auto;
 }
+.home .homeSwiper .swiper-slide-active .home_in_text h3,
+.home .homeSwiper .swiper-slide-active .home_in_text p,
+.home .homeSwiper .swiper-slide-active .home_in_text .main_btn {
+  animation: slideInFromLeft 0.3s ease-out;
+}
 .home .homeSwiper .swiper-notification {
   display: none;
 }
@@ -3603,6 +3608,9 @@ address {
   .home .home_in_text {
     padding: 130px 20px;
   }
+}
+.home .home_in_text .home_icon {
+  transition: 0.2s ease;
 }
 @media (max-width: 993px) {
   .home .home_in_text .home_icon {
@@ -3678,6 +3686,16 @@ address {
 .home .home_in_text a:hover {
   color: #FFFFFF;
   background: #302470;
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .home .fleet_btns {
   position: absolute;
@@ -3756,6 +3774,7 @@ address {
   width: 40px;
   height: 1px;
   background: rgba(255, 255, 255, 0.5019607843);
+  transition: 0.3s linear;
 }
 @media (max-width: 993px) {
   .home .home-pagination .swiper-pagination-bullet::before {
@@ -3769,6 +3788,7 @@ address {
   width: 7px;
   height: 100%;
   background: rgba(255, 255, 255, 0.1490196078);
+  transition: 0.3s linear;
 }
 @media (max-width: 993px) {
   .home .home-pagination .swiper-pagination-bullet::after {
