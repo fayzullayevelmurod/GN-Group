@@ -118,8 +118,24 @@
       background: #0D20300D;
     }
 
-    .fleet_card_img {
-      width: 100%;
+    &:hover {
+      .fleet_card_img_block {
+        .fleet_card_img {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &_img_block {
+      overflow: hidden;
+      height: 230px;
+
+      .fleet_card_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include transition();
+      }
     }
 
     &_content {

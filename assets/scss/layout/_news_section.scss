@@ -625,7 +625,7 @@
 // achived
 
 // fleet
-.fleet {
+.fleet_section {
   height: 509px;
 
   @include media('md') {
@@ -682,7 +682,7 @@
     height: 100%;
   }
 
-  &_block {
+  .fleet_block {
     padding: 60px;
     height: 100%;
     display: flex;
@@ -896,6 +896,27 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: .1s ease;
+
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+
+      &.active {
+        background: #302470;
+
+        span {
+          color: $color-white;
+        }
+
+        &:hover {
+          img {
+            transform: scale(1);
+          }
+        }
+      }
 
       @include media('lg') {
         width: 50px;
@@ -906,6 +927,7 @@
       img {
         width: 38px;
         flex-shrink: 0;
+        @include transition();
 
         @include media('lg') {
           width: 20px;
@@ -918,6 +940,7 @@
         line-height: 23.4px;
         letter-spacing: -0.02em;
         color: $color-under-75;
+        @include transition();
 
         @include media('lg') {
           font-size: 10px;

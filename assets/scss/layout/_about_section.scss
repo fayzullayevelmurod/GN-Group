@@ -254,16 +254,29 @@
         line-height: 14px;
       }
 
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -13px;
+        background: $color-coral;
+        height: 1px;
+        border-radius: 4px;
+        width: 0%;
+        @include transition();
+      }
+
+      &:hover {
+        color: $color-dark;
+
+        &::before {
+          width: 100%;
+        }
+      }
+
       &.active {
         color: $color-dark;
 
         &::before {
-          content: '';
-          position: absolute;
-          bottom: -13px;
-          background: $color-coral;
-          height: 1px;
-          border-radius: 4px;
           width: 100%;
         }
       }

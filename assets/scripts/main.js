@@ -45,6 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // switch
 
+// radar_btn
+document.addEventListener('DOMContentLoaded', () => {
+  const radarButtons = document.querySelectorAll('.radar_btn');
+
+  radarButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      button.classList.toggle('active');
+    });
+  });
+});
+// radar_btn
+
 let swiper = new Swiper(".fleetSwiper", {
   slidesPerView: 1,
   spaceBetween: 20,
@@ -104,6 +116,10 @@ let swiper3 = new Swiper(".homeSwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
   effect: "fade",
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".home-button-next",
     prevEl: ".home-button-prev",

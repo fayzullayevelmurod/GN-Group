@@ -305,11 +305,8 @@ address {
     border-radius: 4px;
     overflow: hidden;
     position: relative;
-    background-image: url('../images/workers_home.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     padding: 30px;
+    position: relative;
 
     @include media('lg') {
       padding: 20px;
@@ -317,20 +314,36 @@ address {
     }
   }
 
-  .policies_home {
-    background-image: url('../images/policies_home.png');
+  .bg_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
   }
 
-  .career_home {
-    background-image: url('../images/career_home.png');
-  }
+  // .policies_home {
+  //   background-image: url('../images/policies_home.png');
+  // }
 
-  .media_home {
-    background-image: url('../images/media_home.png');
-  }
+  // .career_home {
+  //   background-image: url('../images/career_home.png');
+  // }
+
+  // .media_home {
+  //   background-image: url('../images/media_home.png');
+  // }
 
   .office_home {
     background-image: url('../images/office_home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include media('md') {
       background-image: url('../images/office_home_media.png');
@@ -349,11 +362,14 @@ address {
     }
   }
 
-  .fleet_home {
-    background-image: url('../images/fleet_home.png');
-  }
+  // .fleet_home {
+  //   background-image: url('../images/fleet_home.png');
+  // }
 
   .sea_home {
+    background-repeat: no-repeat;
+    background-size: cover;
+
     .main_title {
       margin: 86px 0 110px 0;
 
@@ -365,6 +381,9 @@ address {
 
   .form_home {
     background-image: url('../images/form_home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 
     .main_title {
       @include media('lg') {
@@ -379,21 +398,22 @@ address {
       width: 100%;
       height: 100%;
       z-index: 2;
-      background: linear-gradient(270deg, rgba(13, 32, 48, 0.6) 0%, #0D2030 100%);
+      // background: linear-gradient(270deg, rgba(13, 32, 48, 0.6) 0%, #0D2030 100%);
+      background: rgba(13, 32, 48, 0.9);
     }
   }
 
-  .contact_home {
-    background-image: url('../images/contact_home.png');
-  }
+  // .contact_home {
+  //   background-image: url('../images/contact_home.png');
+  // }
 
-  .news_insight {
-    background-image: url('../images/fleet_home.png');
-  }
+  // .news_insight {
+  //   background-image: url('../images/fleet_home.png');
+  // }
 
-  .services_home {
-    background-image: url('../images/services_home.png');
-  }
+  // .services_home {
+  //   background-image: url('../images/services_home.png');
+  // }
 
   .policies_conservation_home {
     background-image: url('../images/policies_conservation_home.png');

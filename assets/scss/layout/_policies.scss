@@ -18,6 +18,19 @@
     position: relative;
     border-radius: 4px;
     overflow: hidden;
+    height: 612px;
+
+    @include media('xl') {
+      height: 550px;
+    }
+
+    @include media('lg') {
+      height: 400px;
+    }
+
+    @include media('xs') {
+      height: 320px;
+    }
 
     &_text {
       width: 100%;
@@ -29,6 +42,10 @@
     }
 
     &:hover {
+      .policies_card_img {
+        transform: scale(1);
+        top: -10%;
+      }
       .policies_card_bottom {
         background: #2C1F6C;
       }
@@ -80,7 +97,14 @@
   }
 
   &_card_img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include transition();
+    transform: scale(1.2);
   }
 }
 // policies
