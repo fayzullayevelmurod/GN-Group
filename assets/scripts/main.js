@@ -117,7 +117,7 @@ let swiper3 = new Swiper(".homeSwiper", {
   spaceBetween: 10,
   effect: "fade",
   autoplay: {
-    delay: 4000,
+    delay: 6000,
     disableOnInteraction: false,
   },
   navigation: {

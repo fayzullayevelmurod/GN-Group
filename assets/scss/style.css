@@ -3322,6 +3322,19 @@ address {
   stroke: #FFFFFF;
 }
 
+.home .bg_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home .bg_video video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 .home .container {
   position: relative;
   border-radius: 4px;
@@ -3460,6 +3473,10 @@ address {
   position: absolute;
   bottom: 25px;
   left: 25px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 @media (max-width: 1280px) {
   .home .fleet_btns {
@@ -3578,6 +3595,27 @@ address {
 .company {
   height: 720px;
 }
+.company .bg_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.company .bg_video .bg_video_blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 32, 48, 0.6);
+}
+.company .bg_video video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 @media (max-width: 993px) {
   .company {
     height: 546px;
@@ -3585,6 +3623,8 @@ address {
 }
 .company .section_title {
   align-items: start;
+  position: relative;
+  z-index: 3;
 }
 .company .container {
   height: 100%;
@@ -3615,6 +3655,9 @@ address {
 }
 .company .fleet_btns {
   bottom: 296px;
+  display: flex;
+  gap: 12px;
+  z-index: 3;
 }
 @media (max-width: 993px) {
   .company .fleet_btns {
@@ -3634,6 +3677,8 @@ address {
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.8509803922);
   max-width: 752px;
+  position: relative;
+  z-index: 3;
 }
 @media (max-width: 993px) {
   .company p {
@@ -3931,7 +3976,7 @@ address {
     padding: 30px 20px;
   }
 }
-.fleet_section_bg {
+.fleet_section .fleet_bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -3941,7 +3986,7 @@ address {
   background: linear-gradient(270deg, rgba(13, 32, 48, 0) 0%, #0D2030 100%);
 }
 @media (max-width: 768px) {
-  .fleet_section_bg {
+  .fleet_section .fleet_bg {
     display: none;
   }
 }
