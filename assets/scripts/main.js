@@ -129,3 +129,36 @@ let swiper3 = new Swiper(".homeSwiper", {
     clickable: true,
   },
 });
+
+const homeSwpBtn = document.querySelectorAll('.home_slider_number button');
+const homeIcons = document.querySelectorAll('.home_icon');
+
+if (homeSwpBtn.length) {
+  swiper3.on('slideChange', function (e) {
+    homeSwpBtn.forEach((el, elID) => {
+      if (elID == swiper3.realIndex) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    })
+
+    for(let i=0; i<4; i++) {
+      if (i == swiper3.realIndex) {
+        homeIcons.forEach(el => {
+          el.classList.add(`active${swiper3.realIndex+1}`);
+        })
+      } else {
+        homeIcons.forEach(el => {
+          el.classList.remove(`active${i+1}`);
+        })
+      }
+    }
+  });
+
+  homeSwpBtn.forEach((btn, btnID) => {
+    btn.onclick = () => {
+      swiper3.slideTo(btnID);
+    }
+  })
+}

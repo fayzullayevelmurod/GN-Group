@@ -3610,7 +3610,7 @@ address {
   }
 }
 .home .home_in_text .home_icon {
-  transition: 0.2s ease;
+  transition: 0.2s ease all;
 }
 @media (max-width: 993px) {
   .home .home_in_text .home_icon {
