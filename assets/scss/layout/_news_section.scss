@@ -96,6 +96,22 @@
         @include media('lg') {
           display: none;
         }
+
+        &.active1 {
+          transform: rotate(0deg);
+        }
+
+        &.active2 {
+          transform: rotate(180deg);
+        }
+
+        &.active3 {
+          transform: rotate(0deg);
+        }
+
+        &.active4 {
+          transform: rotate(-180deg);
+        }
       }
 
       h3 {
@@ -178,8 +194,6 @@
         opacity: 1;
       }
     }
-
-
   }
 
   .fleet_btns {
@@ -201,6 +215,7 @@
   }
 
   .home-pagination {
+    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -211,11 +226,11 @@
     width: 60px;
     height: calc(100% - 80px);
     z-index: 2;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     @include media('lg') {
+      display: flex;
       width: 100%;
       flex-direction: row;
       justify-content: center;
@@ -293,7 +308,7 @@
         content: '';
         position: absolute;
         right: 0;
-        width: 15px;
+        width: 10px;
         height: 100%;
         background: #FFFFFF80;
       }
@@ -304,6 +319,105 @@
         width: 100%;
         height: 1px;
         background: #FFFFFF80;
+      }
+    }
+  }
+
+  .home_slider_number {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    margin: auto;
+    background: transparent;
+    height: calc(100% - 80px);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include media('lg') {
+      display: none;
+    }
+
+    .home_btn {
+      width: 35px;
+      flex: 1;
+      border-radius: 2px;
+      height: 100%;
+      background: transparent;
+      opacity: 1;
+      position: relative;
+      @include transition();
+      margin-left: auto;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17.07px;
+      letter-spacing: -0.04em;
+      color: #FFFFFF40;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 40px;
+        height: 1px;
+        background: #FFFFFF80;
+        @include transition();
+
+        @include media('lg') {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 7px;
+        height: 100%;
+        background: #FFFFFF26;
+        @include transition();
+
+        @include media('lg') {
+          display: none;
+        }
+      }
+
+      &.active {
+        width: 60px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.94px;
+        letter-spacing: -0.04em;
+        color: $color-white;
+
+        @include media('lg') {
+          width: 10px;
+          height: 3px;
+          background: $color-white;
+          border-radius: 6px;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          width: 10px;
+          height: 100%;
+          background: #FFFFFF80;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background: #FFFFFF80;
+        }
       }
     }
   }
