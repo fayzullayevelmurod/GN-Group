@@ -91,7 +91,7 @@
       }
 
       .home_icon {
-        transition: .2s ease;
+        transition: .2s ease all;
 
         @include media('lg') {
           display: none;
