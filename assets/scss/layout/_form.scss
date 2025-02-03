@@ -39,7 +39,7 @@
     height: 70px;
     border: 1px solid #FFFFFF40;
     border-radius: 50%;
-    outline: 4px solid  rgba(255, 255, 255, 0.05);
+    outline: 4px solid rgba(255, 255, 255, 0.05);
 
     @include media('xl') {
       width: 50px;
@@ -306,7 +306,7 @@
       display: inline;
     }
 
-    input[type=checkbox]{
+    input[type=checkbox] {
       height: 0;
       width: 0;
       visibility: hidden;
@@ -348,11 +348,11 @@
       }
     }
 
-    input:checked + label {
+    input:checked+label {
       background: #302470;
     }
 
-    input:checked + label:after {
+    input:checked+label:after {
       left: calc(100% - 2px);
       transform: translateX(-100%);
     }
@@ -364,3 +364,12 @@
 }
 
 // form_page
+
+.picker {
+  .flatpickr-calendar {
+    background: #fff !important;
+  }
+  .flatpickr-day{
+    color: #000;
+  }
+}

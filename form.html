@@ -17,9 +17,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
     <!-- fonts -->
     <link rel="stylesheet" href="./assets/scss/vendors/aos.min.css">
+    <!-- data picker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ru.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/themes/dark.css">
+
     <!-- css link -->
     <link rel="stylesheet" href="./assets/scss/style.css">
     <!-- css link -->
+
   </head>
 
   <body>
@@ -218,13 +227,13 @@
                     <input type="number" class="main_input" placeholder="Place of Birth">
                   </div>
                 </div>
-                <div class="form_inputs_block" data-aos="fade-up">
+                <div class="form_inputs_block picker" data-aos="fade-up">
                   <div class="form_input">
                     <label for="#">
                       Birthday
                     </label>
                     <div class="form_inputs_block calendar">
-                      <input type="date" class="main_input" placeholder="Place of Birth">
+                      <input type="date" class="main_input calendar-tomorrow" placeholder="Place of Birth">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.66602 1.66669V4.16669" stroke="#0D2030" stroke-width="1.5" stroke-miterlimit="10"
                           stroke-linecap="round" stroke-linejoin="round" />
@@ -353,7 +362,7 @@
                       Available from
                     </label>
                     <div class="form_inputs_block calendar">
-                      <input type="date" class="main_input" placeholder="Place of Birth">
+                      <input type="date" class="main_input calendar-tomorrow" placeholder="Place of Birth">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.66602 1.66669V4.16669" stroke="#0D2030" stroke-width="1.5" stroke-miterlimit="10"
                           stroke-linecap="round" stroke-linejoin="round" />
@@ -476,7 +485,7 @@
                         From (Date)
                       </label>
                       <div class="form_inputs_block calendar">
-                        <input type="date" class="main_input" placeholder="Place of Birth">
+                        <input type="date" class="main_input calendar-tomorrow" placeholder="Place of Birth">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M6.66602 1.66669V4.16669" stroke="#0D2030" stroke-width="1.5" stroke-miterlimit="10"
                             stroke-linecap="round" stroke-linejoin="round" />
@@ -510,7 +519,7 @@
                         To (Date)
                       </label>
                       <div class="form_inputs_block calendar">
-                        <input type="date" class="main_input" placeholder="Place of Birth">
+                        <input type="date" class="main_input calendar-tomorrow" placeholder="Place of Birth">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M6.66602 1.66669V4.16669" stroke="#0D2030" stroke-width="1.5" stroke-miterlimit="10"
                             stroke-linecap="round" stroke-linejoin="round" />
@@ -544,7 +553,7 @@
                         Type of Degree
                       </label>
                       <div class="form_inputs_block calendar">
-                        <input type="date" class="main_input" placeholder="Place of Birth">
+                        <input type="date" class="main_input calendar-tomorrow" placeholder="Place of Birth">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M6.66602 1.66669V4.16669" stroke="#0D2030" stroke-width="1.5" stroke-miterlimit="10"
                             stroke-linecap="round" stroke-linejoin="round" />
@@ -775,6 +784,10 @@
       <!-- footer -->
     </div>
 
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--  Flatpickr  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
     <!-- Swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <!-- Swiper js -->

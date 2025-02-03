@@ -3072,6 +3072,13 @@ address {
   width: 51px;
 }
 
+.picker .flatpickr-calendar {
+  background: #fff !important;
+}
+.picker .flatpickr-day {
+  color: #000;
+}
+
 .sea_head {
   margin-bottom: 30px;
   display: flex;

@@ -184,3 +184,6 @@ if (modal && modalClose && openModalBtns) {
     }
   });
 }
+flatpickr('.calendar-tomorrow', {
+  "minDate": new Date().fp_incr(1)
+});
