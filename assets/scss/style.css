@@ -1435,6 +1435,78 @@ address {
   }
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal.show {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .modal {
+    padding: 10px;
+  }
+}
+.modal__content {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .modal__content {
+    padding: 20px;
+  }
+}
+.modal__content #upload_pdf {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+}
+.modal__close span {
+  width: 20px;
+  height: 2px;
+  background: #000;
+}
+.modal__close span:first-child {
+  transform: rotate(-45deg);
+}
+.modal__close span:last-child {
+  transform: rotate(45deg);
+  top: -18px;
+  position: relative;
+}
+.modal .form_inputs_btns {
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+}
+.modal .form_inputs_btns button {
+  width: 100%;
+}
+
 .fleet_tabs {
   padding: 30px 0;
   display: flex;
@@ -1692,6 +1764,34 @@ address {
     width: 12px;
     height: 12px;
   }
+}
+
+.info-page .fleet_cards {
+  width: 100%;
+  display: block;
+  margin: 40px 0;
+}
+.info-page .fleet_card {
+  display: flex;
+  align-items: stretch;
+}
+@media (max-width: 768px) {
+  .info-page .fleet_card {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.info-page .fleet_card_img_block {
+  width: 800px;
+  height: unset;
+}
+@media (max-width: 768px) {
+  .info-page .fleet_card_img_block {
+    height: 200px;
+  }
+}
+.info-page .fleet_card_content {
+  width: 100%;
 }
 
 .contact .container {

@@ -163,3 +163,24 @@ if (homeSwpBtn.length) {
     }
   })
 }
+
+const modal = document.querySelector(".modal");
+const modalClose = document.querySelector(".modal__close");
+const openModalBtns = document.querySelectorAll(".open-modal__btn")
+if (modal && modalClose && openModalBtns) {
+  openModalBtns.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal.classList.add("show");
+    })
+  })
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove("show");
+  });
+
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.classList.remove("show");
+    }
+  });
+}

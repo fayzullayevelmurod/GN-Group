@@ -277,4 +277,36 @@
     }
   }
 }
+
 // fleet
+
+.info-page {
+  .fleet_cards {
+    width: 100%;
+    display: block;
+    margin: 40px 0;
+  }
+
+  .fleet_card {
+    display: flex;
+    align-items: stretch;
+
+    @include media("md") {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+
+  .fleet_card_img_block {
+    width: 800px;
+    height: unset;
+
+    @include media("md") {
+      height: 200px;
+    }
+  }
+
+  .fleet_card_content {
+    width: 100%;
+  }
+}
