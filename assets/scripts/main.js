@@ -184,6 +184,26 @@ if (modal && modalClose && openModalBtns) {
     }
   });
 }
-flatpickr('.calendar-tomorrow', {
-  "minDate": new Date().fp_incr(1)
-});
+try {
+  flatpickr('.calendar-tomorrow', {
+    "minDate": new Date().fp_incr(1)
+  });
+} catch (error) {
+
+}
+
+let gallery = document.getElementById("light-gallery");
+lightGallery(gallery, {
+  plugin: [lgZoom],
+  controls: true,
+  counter: false,
+  download: true,
+  thumbnail:true,
+  animateThumb: false,
+  showThumbByDefault: false,
+})
+
+try {
+} catch (error) {
+
+}

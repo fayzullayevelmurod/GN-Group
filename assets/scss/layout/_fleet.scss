@@ -2,13 +2,13 @@
 .fleet {
 
   &_tabs {
-    padding: 30px 0;
+    padding: 1.875rem 0;
     display: flex;
     align-items: center;
-    gap: 26px;
+    gap: 1.625rem;
 
     @include media('lg') {
-      padding: 20px 0 12px 0;
+      padding: 1.25rem 0 0.75rem 0;
     }
 
     @include media('md') {
@@ -16,9 +16,9 @@
     }
 
     a {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 500;
-      line-height: 26.4px;
+      line-height: 1.65rem;
       letter-spacing: -0.04em;
       color: #0D203080;
       display: flex;
@@ -26,15 +26,15 @@
       flex-direction: row;
 
       @include media('lg') {
-        font-size: 16px;
-        line-height: 17px;
+        font-size: 1rem;
+        line-height: 1.0625rem;
       }
 
       sup {
-        font-size: 12px;
-        line-height: 12px;
-        transform: translateY(8px);
-        margin-left: 4px;
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+        transform: translateY(0.5rem);
+        margin-left: 0.25rem;
       }
 
       &.active {
@@ -44,17 +44,17 @@
   }
 
   &_date {
-    padding: 18px 20px;
-    border-radius: 4px;
+    padding: 1.125rem 1.25rem;
+    border-radius: 0.25rem;
     background: $color-blue-dark-2;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid $color-coral;
-    margin-bottom: 30px;
+    border-bottom: 0.0625rem solid $color-coral;
+    margin-bottom: 1.875rem;
 
     @include media('lg') {
-      padding: 14px;
+      padding: 0.875rem;
     }
 
     &_right {
@@ -64,29 +64,29 @@
     }
 
     span {
-      font-size: 15px;
+      font-size: 0.9375rem;
       font-weight: 500;
-      line-height: 16.5px;
+      line-height: 1.03125rem;
       letter-spacing: -0.04em;
       color: $color-white;
 
       @include media('lg') {
-        font-size: 12px;
-        line-height: 13px;
+        font-size: 0.75rem;
+        line-height: 0.8125rem;
       }
     }
 
     h6 {
-      font-size: 36px;
+      font-size: 2.25rem;
       font-weight: 400;
-      line-height: 39.6px;
+      line-height: 2.475rem;
       letter-spacing: -0.04em;
       color: $color-white;
-      margin-top: 4px;
+      margin-top: 0.25rem;
 
       @include media('lg') {
-        font-size: 24px;
-        line-height: 26px;
+        font-size: 1.5rem;
+        line-height: 1.625rem;
       }
     }
   }
@@ -94,7 +94,7 @@
   &_cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 17px;
+    gap: 1.0625rem;
 
     @include media('lg') {
       grid-template-columns: repeat(2, 1fr);
@@ -102,18 +102,18 @@
 
     @include media('md') {
       grid-template-columns: repeat(1, 1fr);
-      gap: 20px;
+      gap: 1.25rem;
     }
   }
 
   &_card {
     background: $color-white;
-    border-radius: 4px;
-    border: 1px solid $color-blue-light;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid $color-blue-light;
     overflow: hidden;
 
     .line {
-      height: 1px;
+      height: 0.0625rem;
       width: 100%;
       background: #0D20300D;
     }
@@ -133,7 +133,7 @@
           }
 
           &:last-child {
-            transform: translateX(300px);
+            transform: translateX(18.75rem);
           }
 
           &:nth-child(1) {
@@ -155,10 +155,10 @@
 
         span {
           color: $color-white;
-          transform: translateX(20px);
+          transform: translateX(1.25rem);
 
           @include media('lg') {
-            transform: translateX(15px);
+            transform: translateX(0.9375rem);
           }
         }
 
@@ -170,7 +170,7 @@
 
     &_img_block {
       overflow: hidden;
-      height: 230px;
+      height: 14.375rem;
 
       .fleet_card_img {
         width: 100%;
@@ -183,20 +183,20 @@
     &_content {
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      padding: 20px;
+      gap: 1.25rem;
+      padding: 1.25rem;
     }
 
     h6 {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 500;
-      line-height: 26.4px;
+      line-height: 1.65rem;
       letter-spacing: -0.04em;
       color: $color-under;
 
       @include media('lg') {
-        font-size: 14px;
-        line-height: 15px;
+        font-size: 0.875rem;
+        line-height: 0.9375rem;
       }
     }
 
@@ -207,71 +207,71 @@
     }
 
     span {
-      font-size: 15px;
+      font-size: 0.9375rem;
       font-weight: 300;
-      line-height: 21px;
+      line-height: 1.3125rem;
       letter-spacing: -0.02em;
       color: $color-under-75;
 
       @include media('lg') {
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
       }
     }
 
     b {
-      font-size: 15px;
+      font-size: 0.9375rem;
       font-weight: 400;
-      line-height: 21px;
+      line-height: 1.3125rem;
       letter-spacing: -0.02em;
       color: $color-under;
 
       @include media('lg') {
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
       }
     }
 
     ul {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 1.5rem;
     }
 
     &_btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 7px;
-      border-radius: 8px;
-      padding: 20px;
-      border: 1px solid #0D20300D;
+      gap: 0.4375rem;
+      border-radius: 0.5rem;
+      padding: 1.25rem;
+      border: 0.0625rem solid #0D20300D;
       @include transition();
 
       @include media('lg') {
-        height: 40px;
+        height: 2.5rem;
       }
 
       span {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 300;
-        line-height: 21.94px;
+        line-height: 1.37125rem;
         letter-spacing: -0.04em;
         color: $color-under;
         transition: .2s ease;
 
         @include media('lg') {
-          font-size: 12px;
-          line-height: 14px;
-          padding: 13px;
-          border-radius: 4px;
+          font-size: 0.75rem;
+          line-height: 0.875rem;
+          padding: 0.8125rem;
+          border-radius: 0.25rem;
         }
       }
 
       svg {
         @include media('lg') {
-          width: 12px;
-          height: 12px;
+          width: 0.75rem;
+          height: 0.75rem;
         }
       }
     }
@@ -284,7 +284,7 @@
   .fleet_cards {
     width: 100%;
     display: block;
-    margin: 40px 0;
+    margin: 2.5rem 0;
   }
 
   .fleet_card {
@@ -298,11 +298,11 @@
   }
 
   .fleet_card_img_block {
-    width: 800px;
+    width: 50rem;
     height: unset;
 
     @include media("md") {
-      height: 200px;
+      height: 12.5rem;
     }
   }
 

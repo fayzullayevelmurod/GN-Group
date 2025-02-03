@@ -1,11 +1,11 @@
 @mixin media($breakpoint) {
   $breakpoints: (
-    "xs": 480px,
-    "sm": 640px,
-    "md": 768px,
-    "lg": 993px,
-    "xl": 1280px,
-    "2xl": 1536px
+    "xs": 30rem,
+    "sm": 40rem,
+    "md": 48rem,
+    "lg": 62.0625rem,
+    "xl": 80rem,
+    "2xl": 96rem
   );
 
   @if map-has-key($breakpoints, $breakpoint) {
@@ -19,5 +19,5 @@
 
 // режим работы
 // @include media("lg") {
-//   padding: 10px;
+//   padding: 0.625rem;
 // }

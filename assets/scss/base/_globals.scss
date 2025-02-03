@@ -137,6 +137,11 @@ html {
     font-size: 36px;
   }
 }
+@media (min-width: 4000px) {
+  html {
+    font-size: 37px;
+  }
+}
 
 body {
   font-family: $font-Alexandria;
@@ -169,62 +174,68 @@ address {
 }
 
 .container {
-  max-width: calc(1240px);
+  max-width: calc(77.5rem);
   margin: 0 auto;
 
   @include media('xl') {
-    padding: 0 20px;
+    padding: 0 1.25rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 90rem !important;
   }
 }
 
 .main_title {
-  font-size: 56px;
+  font-size: 3.5rem;
   font-weight: 600;
-  line-height: 61.6px;
+  line-height: 3.85rem;
   letter-spacing: -0.02em;
   color: $color-white;
 
   @include media('lg') {
-    font-size: 28px;
-    line-height: 30.8px;
+    font-size: 1.75rem;
+    line-height: 1.925rem;
     letter-spacing: -0.04em;
   }
 }
 
 .main_text {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 300;
-  line-height: 26.52px;
+  line-height: 1.6575rem;
   letter-spacing: -0.02em;
   color: $color-white-85;
-  max-width: 367px;
+  max-width: 22.9375rem;
 
   @include media('lg') {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 300;
-    line-height: 18.72px;
+    line-height: 1.17rem;
     letter-spacing: -0.02em;
     max-width: 100%;
   }
 }
 
 .main_input {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
-  line-height: 21.94px;
+  line-height: 1.37125rem;
   letter-spacing: -0.04em;
   color: #0D203066;
-  border-radius: 4px;
-  border: 1px solid #0D20301A;
-  padding: 20px 18px;
-  height: 62px;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #0D20301A;
+  padding: 1.25rem 1.125rem;
+  height: 3.875rem;
   width: 100%;
 
   @include media('lg') {
-    height: 40px;
-    padding: 12px;
-    font-size: 12px;
-    line-height: 14px;
+    height: 2.5rem;
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
   }
 
   &::placeholder {
@@ -233,22 +244,22 @@ address {
 }
 
 .main_textarea {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
-  line-height: 21.94px;
+  line-height: 1.37125rem;
   letter-spacing: -0.04em;
   color: #0D203066;
-  border-radius: 4px;
-  border: 1px solid #0D20301A;
-  padding: 20px 18px;
-  height: 148px;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #0D20301A;
+  padding: 1.25rem 1.125rem;
+  height: 9.25rem;
   width: 100%;
   resize: none;
 
   @include media('lg') {
-    padding: 12px;
-    font-size: 12px;
-    line-height: 14px;
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
   }
 
   &::placeholder {
@@ -257,38 +268,38 @@ address {
 }
 
 .blue_btn {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
-  line-height: 21.94px;
+  line-height: 1.37125rem;
   letter-spacing: -0.04em;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
   background: #302470;
   color: $color-white;
-  border: 1px solid #FFFFFF26;
-  padding: 20px;
-  width: 181px;
-  border-radius: 4px;
-  height: 62px;
+  border: 0.0625rem solid #FFFFFF26;
+  padding: 1.25rem;
+  width: 11.3125rem;
+  border-radius: 0.25rem;
+  height: 3.875rem;
 
   @include media('lg') {
-    font-size: 12px;
-    line-height: 14px;
-    gap: 8px;
-    height: 40px;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    gap: 0.5rem;
+    height: 2.5rem;
     width: 100%;
   }
 }
 
 .main_btn {
-  min-width: 181px;
+  min-width: 11.3125rem;
   overflow: hidden;
   position: relative;
 
   @include media('lg') {
-    min-width: 111px;
+    min-width: 6.9375rem;
   }
 
   &::before {
@@ -310,23 +321,23 @@ address {
   &:hover {
     svg {
       &:last-child {
-        transform: translateX(200px);
+        transform: translateX(12.5rem);
       }
 
       &:nth-child(1) {
-        left: 35px;
+        left: 2.1875rem;
 
         @include media('lg') {
-          left: 15px;
+          left: 0.9375rem;
         }
       }
     }
 
     span {
-      transform: translateX(20px);
+      transform: translateX(1.25rem);
 
       @include media('lg') {
-        transform: translateX(15px);
+        transform: translateX(0.9375rem);
       }
     }
   }
@@ -341,8 +352,8 @@ address {
     transition: .1s ease;
 
     @include media('lg') {
-      width: 12px;
-      height: 12px;
+      width: 0.75rem;
+      height: 0.75rem;
     }
 
     &:nth-child(1) {
@@ -362,10 +373,10 @@ address {
 
   @include media('lg') {
     width: 100%;
-    padding: 12px;
-    gap: 8px;
-    font-size: 12px;
-    line-height: 14px;
+    padding: 0.75rem;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
   }
 
   svg {
@@ -389,18 +400,18 @@ address {
 .breadcrumb {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 0.5625rem;
 
   a,
   li {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 17.07px;
+    line-height: 1.066875rem;
     letter-spacing: -0.04em;
 
     @include media('lg') {
-      font-size: 12px;
-      line-height: 14px;
+      font-size: 0.75rem;
+      line-height: 0.875rem;
     }
   }
 
@@ -422,15 +433,15 @@ address {
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
-    line-height: 21.94px;
+    line-height: 1.37125rem;
     letter-spacing: -0.04em;
     color: #0D203066;
-    border-radius: 4px;
-    border: 1px solid #0D20301A;
-    padding: 20px 18px;
-    height: 62px;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid #0D20301A;
+    padding: 1.25rem 1.125rem;
+    height: 3.875rem;
     width: 100%;
     background: transparent;
 
@@ -439,10 +450,10 @@ address {
     }
 
     @include media('lg') {
-      height: 40px;
-      padding: 12px;
-      font-size: 12px;
-      line-height: 14px;
+      height: 2.5rem;
+      padding: 0.75rem;
+      font-size: 0.75rem;
+      line-height: 0.875rem;
     }
   }
 
@@ -450,9 +461,9 @@ address {
     content: "";
     position: absolute;
     top: 50%;
-    right: 16px;
-    width: 16px;
-    height: 16px;
+    right: 1rem;
+    width: 1rem;
+    height: 1rem;
     background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.7193 5.93994L7.06596 10.2866C7.5793 10.7999 8.4193 10.7999 8.93263 10.2866L13.2793 5.93994' stroke='%230D2030' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center;
     background-size: contain;
     transform: translateY(-50%);
@@ -461,47 +472,47 @@ address {
 }
 
 .section_bottom {
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 
   @include media('lg') {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
 
 .section_title {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 500;
-  line-height: 20.72px;
+  line-height: 1.295rem;
   letter-spacing: -0.04em;
   color: $color-coral;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 0.875rem;
   text-transform: uppercase;
 
   svg {
-    width: 18px;
-    height: 18px;
+    width: 1.125rem;
+    height: 1.125rem;
   }
 
 
   @include media('lg') {
-    font-size: 12px;
-    line-height: 14px;
-    gap: 12px;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    gap: 0.75rem;
   }
 }
 
 .main_home {
   &_in {
-    border-radius: 4px;
+    border-radius: 0.25rem;
     overflow: hidden;
     position: relative;
-    padding: 30px;
+    padding: 1.875rem;
     position: relative;
 
     @include media('lg') {
-      padding: 20px;
+      padding: 1.25rem;
       border-radius: 0;
     }
   }
@@ -546,10 +557,10 @@ address {
     }
 
     .main_title {
-      margin: 86px 0 100px;
+      margin: 5.375rem 0 6.25rem;
 
       @include media('lg') {
-        margin: 182px 0 0 0;
+        margin: 11.375rem 0 0 0;
       }
     }
   }
@@ -563,10 +574,10 @@ address {
     background-size: cover;
 
     .main_title {
-      margin: 86px 0 110px 0;
+      margin: 5.375rem 0 6.875rem 0;
 
       @include media('lg') {
-        margin: 182px 0 0 0;
+        margin: 11.375rem 0 0 0;
       }
     }
   }
@@ -579,7 +590,7 @@ address {
 
     .main_title {
       @include media('lg') {
-        margin: 182px 0 0 0;
+        margin: 11.375rem 0 0 0;
       }
     }
 
@@ -617,10 +628,10 @@ address {
   }
 
   .main_title {
-    margin: 48px 0 18px 0;
+    margin: 3rem 0 1.125rem 0;
 
     @include media('lg') {
-      margin: 272px 0 12px 0;
+      margin: 17rem 0 0.75rem 0;
     }
   }
 
@@ -642,18 +653,18 @@ address {
 }
 
 .slider_btn {
-  border: 1px solid #FFFFFF26;
-  border-radius: 4px;
-  backdrop-filter: blur(18px);
-  padding: 10px 23px;
+  border: 0.0625rem solid #FFFFFF26;
+  border-radius: 0.25rem;
+  backdrop-filter: blur(1.125rem);
+  padding: 0.625rem 1.4375rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: .2s ease;
   position: relative;
   overflow: hidden;
-  width: 62px;
-  height: 36px;
+  width: 3.875rem;
+  height: 2.25rem;
 
   &::before {
     position: absolute;
@@ -673,18 +684,18 @@ address {
 
   &:hover {
     .slider_btn_icon {
-      transform: translateX(60px);
+      transform: translateX(3.75rem);
     }
 
     .slider_btn_icon_left {
-      transform: translateX(-60px);
+      transform: translateX(-3.75rem);
     }
   }
 
   .slider_btn_icon {
     position: absolute;
     right: 0;
-    width: 120px;
+    width: 7.5rem;
     display: flex;
     transition: .2s ease;
   }
@@ -694,8 +705,8 @@ address {
   }
 
   svg {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     flex-shrink: 0;
     // position: absolute;
     top: 0;
@@ -705,15 +716,15 @@ address {
     transition: .2s ease;
 
     @include media('lg') {
-      width: 13px;
-      height: 13px;
+      width: 0.8125rem;
+      height: 0.8125rem;
     }
 
     &:nth-child(2) {}
   }
 
   @include media('lg') {
-    padding: 14px 23px;
+    padding: 0.875rem 1.4375rem;
   }
 
   // &:hover {
@@ -723,24 +734,24 @@ address {
 }
 
 .paginations {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 0.25rem;
 
   @include media('lg') {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 
   a {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 0.875rem;
     color: $color-under;
-    border-radius: 4px;
-    width: 48px;
-    height: 48px;
+    border-radius: 0.25rem;
+    width: 3rem;
+    height: 3rem;
     background: $color-white;
     display: flex;
     align-items: center;
@@ -748,10 +759,10 @@ address {
     @include transition();
 
     @include media('lg') {
-      width: 40px;
-      height: 40px;
-      font-size: 12px;
-      line-height: 12px;
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 0.75rem;
+      line-height: 0.75rem;
     }
 
     &:hover {

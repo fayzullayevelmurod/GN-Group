@@ -3,12 +3,12 @@
   &_top {
     display: flex;
     align-items: center;
-    padding: 30px 0;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #E2E4E6;
+    padding: 1.875rem 0;
+    margin-bottom: 1.875rem;
+    border-bottom: 0.0625rem solid #E2E4E6;
 
     .instagram_text {
-      padding: 6px;
+      padding: 0.375rem;
     }
   }
 
@@ -17,11 +17,11 @@
   }
 
   &_right {
-    width: 292px;
+    width: 18.25rem;
     flex-shrink: 0;
     height: 100%;
     position: sticky;
-    top: 5px;
+    top: 0.3125rem;
 
     @include media('lg') {
       display: none;
@@ -30,16 +30,16 @@
 
   &_main_img {
     position: relative;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     overflow: hidden;
-    height: 562px;
+    height: 35.125rem;
 
     @include media('lg') {
-      height: 400px;
+      height: 25rem;
     }
 
     @include media('md') {
-      height: 323px;
+      height: 20.1875rem;
     }
 
     img {
@@ -50,24 +50,24 @@
 
     span {
       position: absolute;
-      left: 36px;
-      top: 36px;
-      border-radius: 4px;
-      padding: 4px 12px;
-      border: 1px solid #EBEEF3;
+      left: 2.25rem;
+      top: 2.25rem;
+      border-radius: 0.25rem;
+      padding: 0.25rem 0.75rem;
+      border: 0.0625rem solid #EBEEF3;
       z-index: 2;
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 500;
-      line-height: 21.94px;
+      line-height: 1.37125rem;
       color: #EBEEF3;
       text-transform: capitalize;
 
       @include media('lg') {
-        padding: 8px 12px;
-        font-size: 10px;
-        line-height: 12px;
-        top: 12px;
-        left: 12px;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+        top: 0.75rem;
+        left: 0.75rem;
       }
     }
 
@@ -83,13 +83,13 @@
   }
 
   &_cards {
-    margin-top: 30px;
+    margin-top: 1.875rem;
     display: grid;
-    gap: 30px 20px;
+    gap: 1.875rem 1.25rem;
     grid-template-columns: repeat(3, 1fr);
 
     @include media('lg') {
-      gap: 20px;
+      gap: 1.25rem;
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -100,8 +100,8 @@
   }
 
   &_card {
-    border-radius: 2px;
-    border: 1px solid #E1E8F0;
+    border-radius: 0.125rem;
+    border: 0.0625rem solid #E1E8F0;
     overflow: hidden;
 
     @include media('lg') {
@@ -109,17 +109,17 @@
       align-items: center;
       flex-direction: row;
       border: none;
-      gap: 20px;
+      gap: 1.25rem;
     }
 
     &_img {
       position: relative;
-      height: 195px;
+      height: 12.1875rem;
       overflow: hidden;
 
       @include media('md') {
-        height: 128px;
-        width: 154px;
+        height: 8rem;
+        width: 9.625rem;
         flex-shrink: 0;
       }
 
@@ -131,57 +131,57 @@
       }
 
       span {
-        padding: 2px 4px;
+        padding: 0.125rem 0.25rem;
         text-transform: capitalize;
         position: absolute;
-        top: 12px;
-        right: 12px;
-        font-size: 12px;
+        top: 0.75rem;
+        right: 0.75rem;
+        font-size: 0.75rem;
         font-weight: 400;
-        line-height: 14.63px;
+        line-height: 0.914375rem;
         color: #EBEEF3;
-        border-radius: 3px;
-        border: 1px solid #EBEEF340;
+        border-radius: 0.1875rem;
+        border: 0.0625rem solid #EBEEF340;
       }
     }
 
     &_text {
-      padding: 23px 20px;
+      padding: 1.4375rem 1.25rem;
 
       @include media('lg') {
         padding: 0;
       }
 
       span {
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 500;
-        line-height: 12.11px;
+        line-height: 0.756875rem;
         letter-spacing: -0.02em;
         color: #0D203066;
 
         @include media('lg') {
-          font-size: 10px;
-          line-height: 10px;
+          font-size: 0.625rem;
+          line-height: 0.625rem;
         }
       }
 
       h6 {
-        margin: 8px 0;
-        font-size: 24px;
+        margin: 0.5rem 0;
+        font-size: 1.5rem;
         font-weight: 400;
-        line-height: 31.2px;
+        line-height: 1.95rem;
         color: $color-under;
 
         @include media('lg') {
-          font-size: 14px;
-          line-height: 19px;
+          font-size: 0.875rem;
+          line-height: 1.1875rem;
         }
       }
 
       p {
-        font-size: 15px;
+        font-size: 0.9375rem;
         font-weight: 400;
-        line-height: 18.58px;
+        line-height: 1.16125rem;
         letter-spacing: -0.02em;
         color: $color-under-75;
         display: -webkit-box;
@@ -191,8 +191,8 @@
         text-overflow: ellipsis;
 
         @include media('lg') {
-          font-size: 12px;
-          line-height: 14px;
+          font-size: 0.75rem;
+          line-height: 0.875rem;
           -webkit-line-clamp: 3;
         }
       }
@@ -209,39 +209,39 @@
 
   &_main_text {
     position: absolute;
-    bottom: 36px;
-    left: 36px;
+    bottom: 2.25rem;
+    left: 2.25rem;
     z-index: 2;
-    padding-top: 350px;
+    padding-top: 21.875rem;
 
     @include media('lg') {
-      left: 12px;
-      bottom: 12px;
-      padding-top: 216px;
+      left: 0.75rem;
+      bottom: 0.75rem;
+      padding-top: 13.5rem;
     }
 
     p {
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 400;
-      line-height: 14.13px;
+      line-height: 0.883125rem;
       color: $color-white;
-      margin-bottom: 7px;
+      margin-bottom: 0.4375rem;
 
       @include media('lg') {
-        font-size: 10px;
-        line-height: 10px;
+        font-size: 0.625rem;
+        line-height: 0.625rem;
       }
     }
 
     h6 {
-      font-size: 36px;
+      font-size: 2.25rem;
       font-weight: 400;
-      line-height: 43.88px;
+      line-height: 2.7425rem;
       color: $color-white;
 
       @include media('lg') {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
       }
     }
   }
@@ -252,12 +252,12 @@
 
   .container {
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
   }
 
   .instagram_bloks {
     display: grid;
-    gap: 1px;
+    gap: 0.0625rem;
     grid-template-columns: repeat(3, 1fr);
 
     @include media('lg') {
@@ -273,8 +273,8 @@
 
       .icon {
         position: absolute;
-        top: 6px;
-        right: 6px;
+        top: 0.375rem;
+        right: 0.375rem;
       }
     }
   }

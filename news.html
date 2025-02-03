@@ -16,7 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
     <!-- fonts -->
-    <link rel="stylesheet" href="./assets/scss/vendors/aos.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.1/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.1/css/lg-zoom.min.css">
     <!-- css link -->
     <link rel="stylesheet" href="./assets/scss/style.css">
     <!-- css link -->
@@ -101,7 +102,8 @@
                   </a>
                 </li>
                 <li>
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" data-aos="fade-up">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    data-aos="fade-up">
                     <g opacity="0.5">
                       <path
                         d="M4.45508 9.95999L7.71508 6.69999C8.10008 6.31499 8.10008 5.68499 7.71508 5.29999L4.45508 2.03999"
@@ -122,9 +124,18 @@
                 classified by deadweight tonnage (DWT) and intended trade routes. These classifications not only reflect
                 tanker size but also impact transport costs, route availability, and regional use.
               </p>
-              <div class="news_img" data-aos="fade-up">
+              <!-- <div class="news_img" data-aos="fade-up">
                 <div class="news_imgbg" data-aos="fade-up"></div>
-                <img src="./assets/images/news_img.png" alt="" data-aos="fade-up">
+                <div class="light-gallery-container" id="light-gallery" data-aos="fade-up">
+                  <a href="./assets/images/news_img.png" class="zoom-img" data-lightbox="gallery">
+                    <img src="./assets/images/news_img.png" alt="">
+                  </a>
+                </div>
+              </div> -->
+              <div class="" id="light-gallery">
+                <a class="zoom-img news_img" href="./assets/images/news_img.png" data-lightbox="gallery">
+                  <img src="./assets/images/news_img.png" alt="">
+                </a>
               </div>
               <h6 data-aos="fade-up">
                 Oil Tanker Types
@@ -424,6 +435,11 @@
       <!-- footer -->
     </div>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.1/plugins/zoom/lg-zoom.min.js"
+      integrity="sha512-/nVDv6BV2iCSxA44tgJLUgxmURDKfoUYdpLah0Hz8s3rpWBMHeiSzrr7bplsMBf+mF2L//RXX2q/SE6B0UhCRA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.1/lightgallery.min.js"></script>
     <!-- Swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <!-- Swiper js -->

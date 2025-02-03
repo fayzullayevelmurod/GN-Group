@@ -1,6 +1,6 @@
 // policies_conservation
 .policies_conservation {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 
   @include media('lg') {
     margin-top: 0;
@@ -8,7 +8,7 @@
 
   .container {
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
 
     @include media('lg') {
       gap: 0;
@@ -23,20 +23,20 @@
   }
 
   &_blocks {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
 
     .container {
       display: flex;
       flex-direction: column;
-      gap: 15px !important;
+      gap: 0.9375rem !important;
       padding: 0;
     }
 
     .policies_conservation_block {
-      border-radius: 4px;
+      border-radius: 0.25rem;
       overflow: hidden;
       width: 100%;
-      padding: 35px 30px;
+      padding: 2.1875rem 1.875rem;
       background-image: url('../images/policies_block1.png');
       position: relative;
       background-repeat: no-repeat;
@@ -66,9 +66,9 @@
     }
 
     h6 {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 600;
-      line-height: 26.4px;
+      line-height: 1.65rem;
       letter-spacing: -0.02em;
       color: $color-white;
       position: relative;
@@ -77,7 +77,7 @@
   }
 
   &_text {
-    max-width: 608px;
+    max-width: 38rem;
 
     .policies_conservation_blocks {
       display: none;
@@ -87,12 +87,12 @@
       }
 
       .policies_conservation_block {
-        padding: 38px 30px;
+        padding: 2.375rem 1.875rem;
       }
 
       h6 {
-        font-size: 18px;
-        line-height: 19px;
+        font-size: 1.125rem;
+        line-height: 1.1875rem;
       }
 
       @include media('lg') {
@@ -108,68 +108,68 @@
     .container {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 1.875rem;
       padding: 0;
 
       @include media('lg') {
-        gap: 20px;
-        padding: 0 20px;
+        gap: 1.25rem;
+        padding: 0 1.25rem;
       }
     }
 
     p {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 300;
-      line-height: 32.4px;
+      line-height: 2.025rem;
       letter-spacing: -0.02em;
       color: $color-under;
 
       @include media('lg') {
-        font-size: 12px;
-        line-height: 21px;
+        font-size: 0.75rem;
+        line-height: 1.3125rem;
       }
     }
 
     a {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 300;
-      line-height: 21.94px;
+      line-height: 1.37125rem;
       letter-spacing: -0.04em;
       display: flex;
       align-items: center;
-      gap: 9px;
-      padding: 20px 40px;
-      border-radius: 4px;
+      gap: 0.5625rem;
+      padding: 1.25rem 2.5rem;
+      border-radius: 0.25rem;
       background: #302470;
-      border: 1px solid #FFFFFF26;
+      border: 0.0625rem solid #FFFFFF26;
       color: $color-white;
       width: max-content;
 
       svg {
         @include media('lg') {
-          width: 16px;
-          height: 16px;
+          width: 1rem;
+          height: 1rem;
         }
       }
 
       @include media('lg') {
-        padding: 12px 40px;
-        font-size: 12px;
-        line-height: 14px;
+        padding: 0.75rem 2.5rem;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
       }
     }
   }
 
   &_left {
-    width: 608px;
+    width: 38rem;
     flex-shrink: 0;
     position: sticky;
-    top: 20px;
+    top: 1.25rem;
     height: 100%;
 
     @include media('lg') {
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
     }
 
     .policies_conservation_blocks {
@@ -191,12 +191,12 @@
 
     &_content {
       .policies_conservation_title {
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 600;
-        line-height: 35.2px;
+        line-height: 2.2rem;
         letter-spacing: -0.02em;
         color: $color-white;
-        margin: 158px 0 0 0;
+        margin: 9.875rem 0 0 0;
 
         br {
           @include media('lg') {

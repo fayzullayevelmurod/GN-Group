@@ -3,10 +3,10 @@
   &_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 1rem;
 
     @include media('lg') {
-      gap: 20px;
+      gap: 1.25rem;
     }
 
     @include media('md') {
@@ -16,28 +16,28 @@
 
   &_card {
     position: relative;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     overflow: hidden;
-    height: 612px;
+    height: 38.25rem;
 
     @include media('xl') {
-      height: 550px;
+      height: 34.375rem;
     }
 
     @include media('lg') {
-      height: 400px;
+      height: 25rem;
     }
 
     @include media('xs') {
-      height: 320px;
+      height: 20rem;
     }
 
     &_text {
       width: 100%;
-      padding: 30px 5px 30px 30px;
+      padding: 1.875rem 0.3125rem 1.875rem 1.875rem;
 
       @include media('lg') {
-        padding: 13px 10px;
+        padding: 0.8125rem 0.625rem;
       }
     }
 
@@ -56,17 +56,17 @@
     }
 
     h6 {
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: 600;
-      line-height: 35.2px;
+      line-height: 2.2rem;
       letter-spacing: -0.04em;
       color: $color-white;
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
 
       @include media('lg') {
-        font-size: 16px;
-        line-height: 17px;
-        margin-bottom: 12px;
+        font-size: 1rem;
+        line-height: 1.0625rem;
+        margin-bottom: 0.75rem;
       }
     }
 
@@ -79,11 +79,11 @@
       align-items: stretch;
       justify-content: space-between;
       background: $color-white-5;
-      backdrop-filter: blur(16px);
+      backdrop-filter: blur(1rem);
       @include transition();
 
       button {
-        min-width: 109px;
+        min-width: 6.8125rem;
         background: $color-blue-dark-2;
         display: flex;
         align-items: center;

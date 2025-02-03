@@ -1,43 +1,43 @@
 // news
 .news {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 
   @include media('lg') {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 
   .container {
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
     overflow: visible;
     position: relative;
 
     @include media('lg') {
-      gap: 20px;
+      gap: 1.25rem;
       flex-direction: column;
     }
   }
 
   .breadcrumb {
     padding-left: 0;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #E9EBEC;
+    padding-bottom: 1.875rem;
+    border-bottom: 0.0625rem solid #E9EBEC;
 
     @include media('lg') {
-      padding-bottom: 20px;
+      padding-bottom: 1.25rem;
     }
 
     a,
     li {
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 400;
-      line-height: 17.07px;
+      line-height: 1.066875rem;
       letter-spacing: -0.04em;
       color: $color-under;
 
       @include media('lg') {
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
       }
     }
 
@@ -54,19 +54,19 @@
   &_left {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.875rem;
 
     @include media('lg') {
-      gap: 20px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #E9EBEC;
+      gap: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 0.0625rem solid #E9EBEC;
     }
 
     ul {
-      padding-left: 20px;
+      padding-left: 1.25rem;
 
       span {
-        transform: translateX(-20px);
+        transform: translateX(-1.25rem);
       }
     }
 
@@ -75,42 +75,42 @@
     }
 
     h3 {
-      font-size: 42px;
+      font-size: 2.625rem;
       font-weight: 500;
-      line-height: 46.2px;
+      line-height: 2.8875rem;
       letter-spacing: -0.04em;
       color: $color-under;
 
       @include media('lg') {
-        font-size: 24px;
-        line-height: 26px;
+        font-size: 1.5rem;
+        line-height: 1.625rem;
       }
     }
 
     h6 {
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: 400;
-      line-height: 35.2px;
+      line-height: 2.2rem;
       letter-spacing: -0.04em;
       color: $color-under;
 
       @include media('lg') {
-        font-size: 16px;
-        line-height: 17px;
+        font-size: 1rem;
+        line-height: 1.0625rem;
       }
     }
 
     p,
     li,
     span {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 300;
-      line-height: 32.4px;
+      line-height: 2.025rem;
       color: $color-under;
 
       @include media('lg') {
-        font-size: 12px;
-        line-height: 21px;
+        font-size: 0.75rem;
+        line-height: 1.3125rem;
       }
     }
 
@@ -123,49 +123,49 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
     position: sticky;
-    top: 20px;
+    top: 1.25rem;
     height: 100%;
 
     h4 {
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
       width: 100%;
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 400;
-      line-height: 19.8px;
+      line-height: 1.2375rem;
       letter-spacing: -0.04em;
       color: $color-under;
-      padding-bottom: 27px;
-      border-bottom: 1px solid #E9EBEC;
+      padding-bottom: 1.6875rem;
+      border-bottom: 0.0625rem solid #E9EBEC;
 
       @include media('lg') {
-        padding-bottom: 20px;
+        padding-bottom: 1.25rem;
         margin-bottom: 0;
-        border-bottom: 1px solid #E9EBEC;
+        border-bottom: 0.0625rem solid #E9EBEC;
       }
     }
   }
 
   &_block {
-    min-width: 397px;
+    min-width: 24.8125rem;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 
     @include media('lg') {
       min-width: 100%;
-      gap: 12px;
+      gap: 0.75rem;
     }
 
     &_img {
-      min-width: 186px;
-      border-radius: 2px;
+      min-width: 11.625rem;
+      border-radius: 0.125rem;
       flex-shrink: 0;
 
       @include media('lg') {
-        min-width: 154px;
-        max-width: 154px;
+        min-width: 9.625rem;
+        max-width: 9.625rem;
       }
 
       img {
@@ -174,35 +174,35 @@
     }
 
     span {
-      font-size: 10px;
+      font-size: 0.625rem;
       font-weight: 500;
-      line-height: 10.09px;
+      line-height: 0.630625rem;
       letter-spacing: -0.02em;
       color: #26262699;
 
       @include media('lg') {
-        font-size: 9px;
-        line-height: 9px;
+        font-size: 0.5625rem;
+        line-height: 0.5625rem;
       }
     }
 
     h6 {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 400;
-      line-height: 24.64px;
+      line-height: 1.54rem;
       color: $color-under;
-      margin: 8px 0;
+      margin: 0.5rem 0;
 
       @include media('lg') {
-        font-size: 13px;
-        line-height: 15px;
+        font-size: 0.8125rem;
+        line-height: 0.9375rem;
       }
     }
 
     p {
-      font-size: 12px;
+      font-size: 0.75rem;
       font-weight: 400;
-      line-height: 14.87px;
+      line-height: 0.929375rem;
       letter-spacing: -0.04em;
       color: $color-under-75;
       display: -webkit-box;
@@ -216,11 +216,11 @@
   &_img {
     width: 100%;
     position: relative;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     overflow: hidden;
 
     @include media('md') {
-      height: 300px;
+      height: 18.75rem;
     }
 
     &::before {

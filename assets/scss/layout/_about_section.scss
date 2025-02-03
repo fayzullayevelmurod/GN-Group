@@ -1,13 +1,13 @@
 // about_section
 .about_section {
-  padding: 100px 0 0 0;
+  padding: 6.25rem 0 0 0;
 
   @include media('lg') {
-    padding: 30px 0 0 0;
+    padding: 1.875rem 0 0 0;
   }
 
   &_bottom {
-    margin-top: 70px;
+    margin-top: 4.375rem;
 
     @include media('lg') {
       margin-top: 0;
@@ -16,19 +16,19 @@
     .about_statistics {
 
       .container {
-        padding: 37px 0;
-        border-top: 1px solid #0D20300D;
+        padding: 2.3125rem 0;
+        border-top: 0.0625rem solid #0D20300D;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
 
         @include media('xl') {
-          padding: 37px 20px;
+          padding: 2.3125rem 1.25rem;
           grid-template-columns: repeat(2, 1fr);
           border: none;
         }
 
         @include media('md') {
-          padding: 40px 0 12px 0;
+          padding: 2.5rem 0 0.75rem 0;
         }
       }
 
@@ -36,19 +36,19 @@
         position: relative;
 
         img {
-          width: 56px;
-          height: 56px;
+          width: 3.5rem;
+          height: 3.5rem;
           flex-shrink: 0;
 
           @include media('md') {
-            width: 36px;
-            height: 36px;
+            width: 2.25rem;
+            height: 2.25rem;
           }
         }
 
         .statistic_line {
           position: absolute;
-          right: 30px;
+          right: 1.875rem;
           top: 0;
           bottom: 0;
           margin: auto;
@@ -62,39 +62,39 @@
       .about_statistic_block {
         display: flex;
         align-items: start;
-        gap: 31px;
+        gap: 1.9375rem;
 
         @include media('md') {
           flex-direction: column;
-          gap: 12px;
+          gap: 0.75rem;
           align-items: center;
           text-align: center;
         }
       }
 
       h6 {
-        font-size: 42px;
+        font-size: 2.625rem;
         font-weight: 300;
-        line-height: 51.2px;
+        line-height: 3.2rem;
         color: $color-dark;
 
         @include media('md') {
-          font-size: 24px;
-          line-height: 29px;
-          margin-bottom: 12px;
+          font-size: 1.5rem;
+          line-height: 1.8125rem;
+          margin-bottom: 0.75rem;
         }
       }
 
       p {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 300;
-        line-height: 28.08px;
+        line-height: 1.755rem;
         letter-spacing: -0.02em;
         color: $color-under-75;
 
         @include media('md') {
-          font-size: 12px;
-          line-height: 18px;
+          font-size: 0.75rem;
+          line-height: 1.125rem;
         }
       }
     }
@@ -103,7 +103,7 @@
   .container {
     display: flex;
     align-items: start;
-    gap: 24px;
+    gap: 1.5rem;
 
     @include media('lg') {
       flex-direction: column;
@@ -111,15 +111,15 @@
     }
 
     h3 {
-      font-size: 42px;
+      font-size: 2.625rem;
       font-weight: 500;
-      line-height: 46.2px;
+      line-height: 2.8875rem;
       letter-spacing: -0.04em;
       color: $color-dark;
 
       @include media('lg') {
-        font-size: 24px;
-        line-height: 26px;
+        font-size: 1.5rem;
+        line-height: 1.625rem;
       }
 
       span {
@@ -129,29 +129,29 @@
     }
 
     p {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 300;
-      line-height: 32.4px;
+      line-height: 2.025rem;
       letter-spacing: -0.02em;
       color: $color-dark;
 
       @include media('lg') {
-        font-size: 12px;
-        line-height: 21px;
+        font-size: 0.75rem;
+        line-height: 1.3125rem;
       }
     }
   }
 
   .section_title {
-    margin-bottom: 77px;
+    margin-bottom: 4.8125rem;
 
     @include media('md') {
-      margin-bottom: 21px;
+      margin-bottom: 1.3125rem;
     }
   }
 
   &_left {
-    width: 503px;
+    width: 31.4375rem;
     flex-shrink: 0;
 
     @include media('md') {
@@ -160,10 +160,10 @@
 
     &_img {
       display: flex;
-      gap: 9px;
+      gap: 0.5625rem;
 
       @include media('md') {
-        gap: 6px;
+        gap: 0.375rem;
       }
 
       @include media('md') {
@@ -174,42 +174,42 @@
       &_right {
         display: flex;
         flex-direction: column;
-        gap: 9px;
+        gap: 0.5625rem;
 
         @include media('md') {
-          gap: 6px;
+          gap: 0.375rem;
         }
       }
     }
 
     .about_section_img1 {
-      height: 509px;
+      height: 31.8125rem;
 
       @include media('xs') {
-        height: 327px;
+        height: 20.4375rem;
       }
     }
 
     .about_section_img2 {
-      height: 239px;
+      height: 14.9375rem;
 
       @include media('xs') {
-        height: 153px;
+        height: 9.5625rem;
       }
     }
 
     .about_section_img3 {
-      height: 322px;
+      height: 20.125rem;
 
       @include media('xs') {
-        height: 207px;
+        height: 12.9375rem;
       }
     }
 
     img {
-      border-radius: 4px;
+      border-radius: 0.25rem;
       object-fit: cover;
-      min-width: 247px;
+      min-width: 15.4375rem;
       flex-shrink: 0;
 
       @include media('md') {
@@ -229,38 +229,38 @@
   }
 
   &_tabs {
-    margin: 37px 0 65px 0;
+    margin: 2.3125rem 0 4.0625rem 0;
     width: max-content;
     display: flex;
     align-items: center;
-    gap: 24px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #D9D9D94D;
+    gap: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 0.0625rem solid #D9D9D94D;
 
     @include media('lg') {
-      margin: 21px 0;
+      margin: 1.3125rem 0;
     }
 
     button {
-      font-size: 15px;
+      font-size: 0.9375rem;
       font-weight: 300;
-      line-height: 18.29px;
+      line-height: 1.143125rem;
       letter-spacing: -0.04em;
       color: $color-under-75;
       position: relative;
 
       @include media('lg') {
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
       }
 
       &::before {
         content: '';
         position: absolute;
-        bottom: -13px;
+        bottom: -0.8125rem;
         background: $color-coral;
-        height: 1px;
-        border-radius: 4px;
+        height: 0.0625rem;
+        border-radius: 0.25rem;
         width: 0%;
         @include transition();
       }
@@ -286,26 +286,26 @@
   &_btns {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-top: 73px;
+    gap: 0.75rem;
+    margin-top: 4.5625rem;
 
     @include media('lg') {
-      gap: 8px;
-      margin-top: 20px;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
     }
 
     a {
-      border: 1px solid #0D203026;
-      border-radius: 4px;
+      border: 0.0625rem solid #0D203026;
+      border-radius: 0.25rem;
       display: flex;
       align-items: center;
-      gap: 7px;
-      font-size: 18px;
+      gap: 0.4375rem;
+      font-size: 1.125rem;
       font-weight: 300;
-      line-height: 21.94px;
+      line-height: 1.37125rem;
       letter-spacing: -0.04em;
       color: $color-dark;
-      padding: 20px 38px;
+      padding: 1.25rem 2.375rem;
       @include transition();
 
       &::before {
@@ -313,12 +313,12 @@
       }
 
       @include media('lg') {
-        gap: 8px;
-        padding: 12px;
+        gap: 0.5rem;
+        padding: 0.75rem;
         flex: 1;
         justify-content: center;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
       }
 
       svg {
@@ -327,14 +327,14 @@
         }
 
         @include media('lg') {
-          width: 12px;
-          height: 12px;
+          width: 0.75rem;
+          height: 0.75rem;
         }
       }
 
       &:hover {
         background: #302470;
-        border: 1px solid #FFFFFF26;
+        border: 0.0625rem solid #FFFFFF26;
         color: $color-white;
 
         svg {
@@ -343,11 +343,11 @@
           }
 
           &:last-child {
-            transform: translateX(200px);
+            transform: translateX(12.5rem);
           }
 
           &:nth-child(1) {
-            left: 35px;
+            left: 2.1875rem;
 
             @include media('lg') {
               left: 40%;
@@ -358,7 +358,7 @@
             }
 
             @include media('xs') {
-              left: 30px;
+              left: 1.875rem;
             }
           }
         }
