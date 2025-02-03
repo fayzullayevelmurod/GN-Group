@@ -15,12 +15,127 @@ img {
   max-width: 100%;
 }
 
-span, label {
+span,
+label {
   display: inline-block;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (min-width: 2000px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 2100px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 2200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 2300px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 2400px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 2500px) {
+  html {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 2600px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 2700px) {
+  html {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 2800px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 2900px) {
+  html {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 3000px) {
+  html {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 3100px) {
+  html {
+    font-size: 29px;
+  }
+}
+
+@media (min-width: 3200px) {
+  html {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 3300px) {
+  html {
+    font-size: 31px;
+  }
+}
+
+@media (min-width: 3400px) {
+  html {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 3500px) {
+  html {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 3600px) {
+  html {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 3700px) {
+  html {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 3800px) {
+  html {
+    font-size: 36px;
+  }
 }
 
 body {
@@ -30,7 +145,8 @@ body {
   background: $color-body;
 }
 
-input, textarea {
+input,
+textarea {
   outline: none;
   border: 0;
   background: transparent;
@@ -233,6 +349,7 @@ address {
       position: absolute;
       left: -100%;
     }
+
     &:nth-child(2) {
       position: absolute;
       right: -100%;
@@ -274,7 +391,8 @@ address {
   align-items: center;
   gap: 9px;
 
-  a,li {
+  a,
+  li {
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
@@ -591,9 +709,7 @@ address {
       height: 13px;
     }
 
-    &:nth-child(2) {
-
-    }
+    &:nth-child(2) {}
   }
 
   @include media('lg') {
