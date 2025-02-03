@@ -1,3 +1,4 @@
+AOS.init();
 // burger
 let header_link = document.querySelector('.header_link');
 let burger_btn = document.querySelector('.burger_btn');
@@ -143,14 +144,14 @@ if (homeSwpBtn.length) {
       }
     })
 
-    for(let i=0; i<4; i++) {
+    for (let i = 0; i < 4; i++) {
       if (i == swiper3.realIndex) {
         homeIcons.forEach(el => {
-          el.classList.add(`active${swiper3.realIndex+1}`);
+          el.classList.add(`active${swiper3.realIndex + 1}`);
         })
       } else {
         homeIcons.forEach(el => {
-          el.classList.remove(`active${i+1}`);
+          el.classList.remove(`active${i + 1}`);
         })
       }
     }
