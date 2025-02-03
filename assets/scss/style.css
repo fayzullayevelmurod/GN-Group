@@ -4623,12 +4623,20 @@ address {
     line-height: 10px;
   }
 }
+@media (max-width: 768px) {
+  .radar .scroll_box {
+    overflow-x: scroll;
+  }
+  .radar .scroll_box::-webkit-scrollbar {
+    display: none;
+  }
+}
 .radar_lists {
   border: 1px solid #E1E8F0;
 }
 @media (max-width: 768px) {
   .radar_lists {
-    display: none;
+    width: 768px;
   }
 }
 .radar_lists span {
@@ -4667,11 +4675,6 @@ address {
   display: none;
   flex-direction: column;
   gap: 20px;
-}
-@media (max-width: 768px) {
-  .radar_lists_media {
-    display: flex;
-  }
 }
 .radar_lists_media_block {
   border: 1px solid #E1E8F0;
