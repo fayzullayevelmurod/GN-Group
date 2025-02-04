@@ -791,3 +791,11 @@ address {
   background-color: rgb(10, 137, 196);
   color: #fff;
 }
+.lg-object.lg-image {
+  // height: 80% !important;
+}
+.lg-outer.lg-use-transition-for-zoom .lg-item.lg-complete.lg-zoomable .lg-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

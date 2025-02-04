@@ -184,33 +184,8 @@ if (modal && modalClose && openModalBtns) {
     }
   });
 }
-try {
-  $(function() {
-    $('input[name="daterange"]').daterangepicker({
-      opens: 'left'
-    }, function(start, end, label) {
-      console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-    });
-  });
-} catch (error) {
 
-}
-
-let gallery = document.getElementById("light-gallery");
-if (gallery) {
-  lightGallery(gallery, {
-    plugin: [lgZoom],
-    controls: true,
-    counter: false,
-    download: true,
-    thumbnail: true,
-    animateThumb: false,
-    showThumbByDefault: false,
-  })
-
-}
-
-let certificates_img = document.querySelectorAll('.news_block_img img');
+let certificates_img = document.querySelectorAll('.gallery-img');
 if (certificates_img.length) {
     certificates_img.forEach(img => {
         img.onclick = () => {
@@ -238,3 +213,30 @@ if (certificates_img.length) {
         }
     })
 }
+
+try {
+  $(function() {
+    $('input[name="daterange"]').daterangepicker({
+      opens: 'left'
+    }, function(start, end, label) {
+      console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    });
+  });
+} catch (error) {
+
+}
+
+let gallery = document.getElementById("light-gallery");
+if (gallery) {
+  lightGallery(gallery, {
+    plugin: [lgZoom],
+    controls: true,
+    counter: false,
+    download: true,
+    thumbnail: true,
+    animateThumb: false,
+    showThumbByDefault: false,
+  })
+
+}
+

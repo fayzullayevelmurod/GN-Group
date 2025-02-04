@@ -1037,6 +1037,12 @@ address {
   color: #fff;
 }
 
+.lg-outer.lg-use-transition-for-zoom .lg-item.lg-complete.lg-zoomable .lg-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header {
   padding: 1.125rem 0;
   position: relative;
