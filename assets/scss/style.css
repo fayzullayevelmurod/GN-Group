@@ -1033,8 +1033,22 @@ address {
 }
 
 .daterangepicker .drp-buttons .btn {
-  background-color: rgb(10, 137, 196);
+  background-color: #302470;
   color: #fff;
+  border-radius: 7px;
+  padding: 8px;
+}
+
+.daterangepicker th.month {
+  color: #0D2030;
+}
+
+.daterangepicker .calendar-table {
+  color: rgba(11, 26, 39, 0.4);
+}
+
+.daterangepicker .cancelBtn {
+  display: none;
 }
 
 .lg-outer.lg-use-transition-for-zoom .lg-item.lg-complete.lg-zoomable .lg-img-wrap {
