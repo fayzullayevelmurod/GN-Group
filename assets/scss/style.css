@@ -1028,6 +1028,10 @@ address {
   color: rgba(13, 32, 48, 0.3490196078);
 }
 
+.achived_right {
+  flex: 1;
+}
+
 .header {
   padding: 1.125rem 0;
   position: relative;
@@ -3254,7 +3258,7 @@ address {
   display: none;
 }
 .sea_list {
-  width: 77.5rem;
+  width: 100%;
 }
 @media (max-width: 62.0625rem) {
   .sea_list {
@@ -3271,6 +3275,7 @@ address {
   align-items: center;
   gap: 0.9375rem;
   margin-bottom: 0.5625rem;
+  min-width: 805px;
 }
 @media (max-width: 62.0625rem) {
   .sea_list_head {
@@ -3299,6 +3304,8 @@ address {
   align-items: center;
   gap: 0.9375rem;
   margin-bottom: 0.5625rem;
+  width: 100%;
+  justify-content: space-between;
 }
 .sea_list_body:nth-child(odd) {
   background: #F5F5F5;
@@ -3393,6 +3400,16 @@ address {
 }
 .sea_list a:hover {
   border: 0.0625rem solid #302470;
+}
+
+.flatpickr-prev-month svg {
+  display: block;
+  margin-right: auto;
+}
+
+.flatpickr-next-month svg {
+  display: block;
+  margin-left: auto;
 }
 
 .about_section {

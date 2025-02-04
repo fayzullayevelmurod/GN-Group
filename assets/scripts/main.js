@@ -193,17 +193,25 @@ try {
 }
 
 let gallery = document.getElementById("light-gallery");
-lightGallery(gallery, {
-  plugin: [lgZoom],
-  controls: true,
-  counter: false,
-  download: true,
-  thumbnail:true,
-  animateThumb: false,
-  showThumbByDefault: false,
-})
-
-try {
-} catch (error) {
+if (gallery) {
+  lightGallery(gallery, {
+    plugin: [lgZoom],
+    controls: true,
+    counter: false,
+    download: true,
+    thumbnail: true,
+    animateThumb: false,
+    showThumbByDefault: false,
+  })
 
 }
+try {
+} catch (error) {
+  
+}
+$(function () {
+  $("#datepicker").datepicker({
+    numberOfMonths: 3,
+    showButtonPanel: true
+  });
+});

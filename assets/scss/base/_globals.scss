@@ -137,6 +137,7 @@ html {
     font-size: 36px;
   }
 }
+
 @media (min-width: 4000px) {
   html {
     font-size: 37px;
@@ -780,4 +781,8 @@ address {
       color: #0D203059;
     }
   }
+}
+
+.achived_right {
+  flex: 1;
 }
