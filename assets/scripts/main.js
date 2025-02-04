@@ -185,8 +185,12 @@ if (modal && modalClose && openModalBtns) {
   });
 }
 try {
-  flatpickr('.calendar-tomorrow', {
-    "minDate": new Date().fp_incr(1)
+  $(function() {
+    $('input[name="daterange"]').daterangepicker({
+      opens: 'left'
+    }, function(start, end, label) {
+      console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    });
   });
 } catch (error) {
 
@@ -205,13 +209,32 @@ if (gallery) {
   })
 
 }
-try {
-} catch (error) {
-  
+
+let certificates_img = document.querySelectorAll('.news_block_img img');
+if (certificates_img.length) {
+    certificates_img.forEach(img => {
+        img.onclick = () => {
+            let src = [];
+            certificates_img.forEach(item => {
+                src.push({
+                    'src': item.getAttribute('src'),
+                    'thumb': item.getAttribute('src'),
+                    'subHtml': ''
+                });
+            })
+            let pdf = img.getAttribute('data-pdf');
+            $('#lightgallery').remove();
+            const galleryContainer = document.createElement('div');
+            galleryContainer.id = 'lightgallery';
+            document.body.appendChild(galleryContainer);
+            lightGallery(galleryContainer, {
+                dynamic: true,
+                dynamicEl: src,
+            });
+            setTimeout(() => {
+                let download = document.querySelector('#lg-download');
+                download.setAttribute('href', pdf);
+            }, 500);
+        }
+    })
 }
-$(function () {
-  $("#datepicker").datepicker({
-    numberOfMonths: 3,
-    showButtonPanel: true
-  });
-});
