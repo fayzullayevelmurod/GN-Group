@@ -17,6 +17,9 @@
     @include media('lg') {
       width: 11.625rem;
     }
+    img {
+      width: 200px;
+    }
   }
 
   &_link {

@@ -187,31 +187,31 @@ if (modal && modalClose && openModalBtns) {
 
 let certificates_img = document.querySelectorAll('.gallery-img');
 if (certificates_img.length) {
-    certificates_img.forEach(img => {
-        img.onclick = () => {
-            let src = [];
-            certificates_img.forEach(item => {
-                src.push({
-                    'src': item.getAttribute('src'),
-                    'thumb': item.getAttribute('src'),
-                    'subHtml': ''
-                });
-            })
-            let pdf = img.getAttribute('data-pdf');
-            $('#lightgallery').remove();
-            const galleryContainer = document.createElement('div');
-            galleryContainer.id = 'lightgallery';
-            document.body.appendChild(galleryContainer);
-            lightGallery(galleryContainer, {
-                dynamic: true,
-                dynamicEl: src,
-            });
-            setTimeout(() => {
-                let download = document.querySelector('#lg-download');
-                download.setAttribute('href', pdf);
-            }, 500);
-        }
-    })
+  certificates_img.forEach(img => {
+    img.onclick = () => {
+      let src = [];
+      certificates_img.forEach(item => {
+        src.push({
+          'src': item.getAttribute('src'),
+          'thumb': item.getAttribute('src'),
+          'subHtml': ''
+        });
+      })
+      let pdf = img.getAttribute('data-pdf');
+      $('#lightgallery').remove();
+      const galleryContainer = document.createElement('div');
+      galleryContainer.id = 'lightgallery';
+      document.body.appendChild(galleryContainer);
+      lightGallery(galleryContainer, {
+        dynamic: true,
+        dynamicEl: src,
+      });
+      setTimeout(() => {
+        let download = document.querySelector('#lg-download');
+        download.setAttribute('href', pdf);
+      }, 500);
+    }
+  })
 }
 
 try {
@@ -222,7 +222,7 @@ try {
   //     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
   //   });
   // });
-  $(function() {
+  $(function () {
     $('input[name="daterange"]').daterangepicker({
       opens: 'left',
       ranges: {
@@ -237,7 +237,7 @@ try {
         format: 'YYYY-MM-DD',
         separator: ' to '
       }
-    }, function(start, end, label) {
+    }, function (start, end, label) {
       console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
     });
   });
@@ -258,4 +258,12 @@ if (gallery) {
   })
 
 }
+
+
+const loader = document.getElementById('loader');
+const video = document.querySelector('#loader video');
+
+video.addEventListener('ended', () => {
+  loader.style.display = 'none';
+});
 
