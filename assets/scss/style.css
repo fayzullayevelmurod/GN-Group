@@ -1152,7 +1152,7 @@ address {
     font-weight: 400;
     line-height: 1.82875rem;
     letter-spacing: -0.04em;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
   }
 }
 .header_link a.active {
@@ -1212,6 +1212,38 @@ address {
 @media (max-width: 62.0625rem) {
   .header .burger_btn {
     display: flex;
+  }
+}
+.header .dropdown-item {
+  position: relative;
+}
+.header .dropdown-list {
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  border: 1px solid #9747ff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  width: 120px;
+  z-index: 1000;
+  background: #fff;
+  transform-origin: top;
+  transition: all 0.2s ease;
+  transform: scaleY(0);
+}
+.header .dropdown-list.show {
+  transform: scaleY(1);
+}
+.header .dropdown-list a {
+  color: rgba(13, 32, 48, 0.7490196078) !important;
+}
+@media (max-width: 62.0625rem) {
+  .header .dropdown-list {
+    padding: 10px;
+    width: 140px;
   }
 }
 

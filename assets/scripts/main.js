@@ -8,6 +8,19 @@ burger_btn.addEventListener('click', () => {
 })
 // burger
 
+const dropdownItem = document.querySelector(".dropdown-item");
+const dropdownList = document.querySelector(".dropdown-list");
+
+dropdownItem.addEventListener("click", (event) => {
+  dropdownList.classList.toggle("show");
+  event.stopPropagation();
+});
+
+document.addEventListener("click", (event) => {
+  if (!dropdownItem.contains(event.target) && !dropdownList.contains(event.target)) {
+    dropdownList.classList.remove("show");
+  }
+});
 // tabs
 const tabs = document.querySelectorAll(".tab");
 const contents = document.querySelectorAll(".content");
@@ -215,13 +228,6 @@ if (certificates_img.length) {
 }
 
 try {
-  // $(function() {
-  //   $('input[name="daterange"]').daterangepicker({
-  //     opens: 'left'
-  //   }, function(start, end, label) {
-  //     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-  //   });
-  // });
   $(function () {
     $('input[name="daterange"]').daterangepicker({
       opens: 'left',
@@ -266,4 +272,5 @@ const video = document.querySelector('#loader video');
 video.addEventListener('ended', () => {
   loader.style.display = 'none';
 });
+
 

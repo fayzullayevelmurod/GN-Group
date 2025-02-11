@@ -81,7 +81,7 @@
         font-weight: 400;
         line-height: 1.82875rem;
         letter-spacing: -0.04em;
-        color: $color-white;
+        color: $color-white !important;
       }
 
       &.active {
@@ -148,6 +148,37 @@
 
     @include media('lg') {
       display: flex;
+    }
+  }
+  .dropdown-item {
+    position: relative;
+  }
+  .dropdown-list {
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+    border: 1px solid #9747ff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 120px;
+    z-index: 1000;
+    background: #fff;
+    transform-origin: top;
+    transition: all 0.2s ease;
+    transform: scaleY(0);
+    &.show {
+      transform: scaleY(1);
+    }
+    a {
+      color: rgba(13, 32, 48, 0.7490196078) !important;
+    }
+
+    @include media('lg') {
+      padding: 10px;
+      width: 140px;
     }
   }
 }
