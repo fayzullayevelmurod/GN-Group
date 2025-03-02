@@ -8,19 +8,6 @@ burger_btn.addEventListener('click', () => {
 })
 // burger
 
-const dropdownItem = document.querySelector(".dropdown-item");
-const dropdownList = document.querySelector(".dropdown-list");
-
-dropdownItem.addEventListener("click", (event) => {
-  dropdownList.classList.toggle("show");
-  event.stopPropagation();
-});
-
-document.addEventListener("click", (event) => {
-  if (!dropdownItem.contains(event.target) && !dropdownList.contains(event.target)) {
-    dropdownList.classList.remove("show");
-  }
-});
 // tabs
 const tabs = document.querySelectorAll(".tab");
 const contents = document.querySelectorAll(".content");
