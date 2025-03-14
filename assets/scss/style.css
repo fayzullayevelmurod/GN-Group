@@ -911,7 +911,7 @@ address {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: linear-gradient(270deg, rgba(13, 32, 48, 0) 0%, #0D2030 100%);
+  background: linear-gradient(270deg, rgba(13, 32, 48, 0) 0%, #0d2030 100%);
 }
 
 .slider_btn {
@@ -1040,7 +1040,7 @@ address {
 }
 
 .daterangepicker th.month {
-  color: #0D2030;
+  color: #0d2030;
 }
 
 .daterangepicker .calendar-table {
@@ -1072,6 +1072,10 @@ address {
 .loader-gif img {
   width: 100px;
   height: 100px;
+}
+
+.table-page__radar {
+  margin: 50px 0;
 }
 
 .header {
@@ -2610,7 +2614,7 @@ address {
   top: 0;
   bottom: 0;
   width: 0.0625rem;
-  background: #E9EBEC;
+  background: #e9ebec;
   height: 100%;
 }
 @media (max-width: 62.0625rem) {
@@ -2834,7 +2838,7 @@ address {
 .media .tabs-container .content_in .year {
   position: absolute;
   bottom: 0;
-  left: 1.625rem;
+  right: 0;
   font-size: 15.625rem;
   font-weight: 500;
   line-height: 11.25rem;
@@ -3927,7 +3931,7 @@ address {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: linear-gradient(270deg, rgba(13, 32, 48, 0) 0%, #0D2030 100%);
+  background: linear-gradient(270deg, rgba(13, 32, 48, 0) 0%, #0d2030 100%);
 }
 .home .home_in_text {
   padding: 9.375rem 1.5625rem 11.8125rem;
@@ -4262,7 +4266,7 @@ address {
 }
 
 .company {
-  height: 45rem;
+  height: 56rem;
 }
 .company .bg_video {
   position: absolute;
@@ -4287,7 +4291,7 @@ address {
 }
 @media (max-width: 62.0625rem) {
   .company {
-    height: 34.125rem;
+    height: 45.125rem;
   }
 }
 .company .section_title {
@@ -4338,8 +4342,15 @@ address {
     position: absolute;
   }
 }
+.company .companyHistorySwiper {
+  margin: 20px 0;
+}
+.company .companyHistorySwiper h2 {
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.8509803922);
+  font-weight: 600;
+}
 .company p {
-  margin: 4.0625rem 0 2rem 0;
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 2.025rem;
@@ -4353,7 +4364,6 @@ address {
   .company p {
     font-size: 0.75rem;
     line-height: 1.3125rem;
-    margin: 10.75rem 0 0 0;
   }
 }
 .company .companySwiper {
@@ -4422,7 +4432,7 @@ address {
   }
 }
 .achived_left {
-  background: #2C1F6C;
+  background: #2c1f6c;
   padding: 3.75rem;
   width: 32.9375rem;
   display: flex;
@@ -4529,7 +4539,7 @@ address {
 .achived_right_blocks li {
   width: 5rem;
   padding: 0.875rem 1.25rem;
-  border: 0.0625rem solid #FFFFFF;
+  border: 0.0625rem solid #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4640,7 +4650,7 @@ address {
 }
 @media (max-width: 48rem) {
   .fleet_section {
-    background: #0D2030;
+    background: #0d2030;
     height: auto;
     padding: 1.875rem 1.25rem;
   }
@@ -4652,7 +4662,7 @@ address {
   z-index: 2;
   width: 100%;
   height: 100%;
-  background: linear-gradient(270deg, rgba(13, 32, 48, 0) 0%, #0D2030 100%);
+  background: linear-gradient(270deg, rgba(13, 32, 48, 0) 0%, #0d2030 100%);
 }
 @media (max-width: 48rem) {
   .fleet_section .fleet_bg {
@@ -4903,7 +4913,7 @@ address {
   gap: 0.75rem;
   width: 6.1875rem;
   height: 6.1875rem;
-  border: 0.0625rem solid #E1E8F0;
+  border: 0.0625rem solid #e1e8f0;
   background: #FFFFFF;
   display: flex;
   align-items: center;
@@ -4962,7 +4972,7 @@ address {
   }
 }
 .radar_lists {
-  border: 0.0625rem solid #E1E8F0;
+  border: 0.0625rem solid #e1e8f0;
 }
 @media (max-width: 48rem) {
   .radar_lists {
@@ -4982,7 +4992,7 @@ address {
   align-items: center;
   gap: 0.625rem;
   background: #F7C033;
-  border-bottom: 0.0625rem solid #E1E8F0;
+  border-bottom: 0.0625rem solid #e1e8f0;
 }
 .radar_lists_body {
   display: flex;
@@ -5007,7 +5017,7 @@ address {
   gap: 1.25rem;
 }
 .radar_lists_media_block {
-  border: 0.0625rem solid #E1E8F0;
+  border: 0.0625rem solid #e1e8f0;
   background: #FFFFFF;
 }
 .radar_lists_media_head {
@@ -5033,7 +5043,7 @@ address {
   bottom: 0;
   height: 0.0625rem;
   width: calc(100% - 1.5rem);
-  background: #F0F3F7;
+  background: #f0f3f7;
 }
 .radar_lists_media_body:last-child::before {
   display: none;
@@ -5128,7 +5138,7 @@ address {
 }
 .news_section_left {
   padding: 2.25rem;
-  border: 0.0625rem solid #E1E8F0;
+  border: 0.0625rem solid #e1e8f0;
   border-radius: 0.25rem 0 0 0.25rem;
 }
 @media (max-width: 62.0625rem) {
@@ -5153,9 +5163,9 @@ address {
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.37125rem;
-  color: #EBEEF3;
+  color: #ebeef3;
   border-radius: 0.1875rem;
-  border: 0.0625rem solid #EBEEF3;
+  border: 0.0625rem solid #ebeef3;
   position: relative;
   z-index: 2;
   width: -moz-max-content;

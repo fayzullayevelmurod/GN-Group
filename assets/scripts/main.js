@@ -112,6 +112,15 @@ let swiper2 = new Swiper(".companySwiper", {
     },
   },
 });
+let companyHistorySwiper = new Swiper(".companyHistorySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  navigation: {
+    nextEl: ".company-button-next",
+    prevEl: ".company-button-prev",
+  },
+});
 
 let swiper3 = new Swiper(".homeSwiper", {
   slidesPerView: 1,
@@ -256,8 +265,10 @@ if (gallery) {
 const loader = document.getElementById('loader');
 const video = document.querySelector('#loader video');
 
-video.addEventListener('ended', () => {
-  loader.style.display = 'none';
-});
+if (loader && video) {
+  video.addEventListener('ended', () => {
+    loader.style.display = 'none';
+  });
+}
 
 

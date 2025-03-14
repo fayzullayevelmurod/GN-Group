@@ -41,7 +41,7 @@
         top: 0;
         bottom: 0;
         width: 0.0625rem;
-        background: #E9EBEC;
+        background: #e9ebec;
         height: 100%;
 
         @include media('lg') {
@@ -75,7 +75,7 @@
       .line {
         height: 0.0625rem;
         width: 0.4375rem;
-        background: #0D203040;
+        background: #0d203040;
         @include transition();
 
         @include media('lg') {
@@ -107,7 +107,6 @@
           }
         }
       }
-
     }
 
     .tab-content {
@@ -258,14 +257,15 @@
         .year {
           position: absolute;
           bottom: 0;
-          left: 1.625rem;
+          // left: 1.625rem;
+          right: 0;
           font-size: 15.625rem;
           font-weight: 500;
           line-height: 11.25rem;
           letter-spacing: -0.04em;
           color: transparent;
           -webkit-text-fill-color: transparent;
-          -webkit-text-stroke: 0.0625rem #0D203040;
+          -webkit-text-stroke: 0.0625rem #0d203040;
 
           @include media('xl') {
             font-size: 13.125rem;
@@ -274,7 +274,7 @@
           @include media('lg') {
             font-size: 6.25rem;
             line-height: 5rem;
-            color: #0D20300D;
+            color: #0d20300d;
             right: 0;
             left: auto;
           }
@@ -342,7 +342,6 @@
     }
 
     .media_imgs_right {
-
       .media_block {
         display: flex;
         flex-direction: column;
