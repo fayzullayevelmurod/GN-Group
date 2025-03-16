@@ -65,30 +65,13 @@ let swiper = new Swiper(".fleetSwiper", {
     nextEl: ".fleet-button-next",
     prevEl: ".fleet-button-prev",
   },
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
-  // breakpoints: {
-  //   640: {
-  //     slidesPerView: 2.2,
-  //     spaceBetween: 28,
-  //   },
-  //   993: {
-  //     slidesPerView: 3.2,
-  //     spaceBetween: 28,
-  //   },
-  //   1200: {
-  //     slidesPerView: 3.6,
-  //     spaceBetween: 40,
-  //   },
-  // },
 });
 
 let swiper2 = new Swiper(".companySwiper", {
   slidesPerView: 2.2,
   spaceBetween: 20,
   loop: true,
+  simulateTouch: false,
   navigation: {
     nextEl: ".company-button-next",
     prevEl: ".company-button-prev",
@@ -120,6 +103,7 @@ let companyHistorySwiper = new Swiper(".companyHistorySwiper", {
     nextEl: ".company-button-next",
     prevEl: ".company-button-prev",
   },
+  simulateTouch: false,
 });
 
 let swiper3 = new Swiper(".homeSwiper", {
@@ -271,4 +255,30 @@ if (loader && video) {
   });
 }
 
+// script.js
 
+// Swiper'ni sozlash
+const galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+});
+
+const galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 5,
+  centeredSlides: true,
+  slideToClickedSlide: true,
+  initialSlide: 2,
+  breakpoints: {
+    768: {
+      slidesPerView: 5,
+    },
+    0: {
+      initialSlide: 0,
+      slidesPerView: 3,
+    }
+  }
+});
+
+// Ikkala Swiper'ni bir-biriga bog'lash
+galleryTop.controller.control = galleryThumbs;
+galleryThumbs.controller.control = galleryTop;
