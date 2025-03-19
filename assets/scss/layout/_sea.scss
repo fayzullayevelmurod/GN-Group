@@ -77,14 +77,15 @@
     }
 
     &_head {
-      border: 0.0625rem solid #E1E8F0;
+      border: 0.0625rem solid #e1e8f0;
       border-radius: 0.25rem;
       background: $color-white;
       padding: 1.0625rem 0.625rem;
       height: 3.875rem;
       display: flex;
       align-items: center;
-      gap: 0.9375rem;
+      // gap: 0.9375rem;
+      gap: 34px;
       margin-bottom: 0.5625rem;
       min-width: 805px;
 
@@ -119,7 +120,7 @@
       justify-content: space-between;
 
       &:nth-child(odd) {
-        background: #F5F5F5;
+        background: #f5f5f5;
       }
 
       span {
@@ -163,7 +164,8 @@
     }
 
     .duration {
-      width: 5rem;
+      // width: 5rem;
+      width: 4rem;
     }
 
     .type {
@@ -199,7 +201,7 @@
       letter-spacing: -0.04em;
       color: $color-white;
       background: #302470;
-      border: 0.0625rem solid #FFFFFF26;
+      border: 0.0625rem solid #ffffff26;
       padding: 0.5rem 1.25rem;
       border-radius: 0.5rem;
       @include transition();
@@ -231,7 +233,6 @@
       }
     }
   }
-
 }
 
 // sea
