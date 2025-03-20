@@ -2007,10 +2007,19 @@ address {
 @media (max-width: 48rem) {
   .info-page .fleet_card_img_block {
     height: 12.5rem;
+    width: 100%;
   }
 }
 .info-page .fleet_card_content {
   width: 100%;
+}
+
+.fleet_card_swiper {
+  height: 100%;
+  width: 100%;
+}
+.fleet_card_swiper .swiper-slide {
+  overflow: hidden;
 }
 
 .contact .container {
@@ -2081,9 +2090,6 @@ address {
   border: 0.0625rem solid #E1E8F0;
   border-radius: 0.25rem 0 0 0.25rem;
   padding: 1.875rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 @media (max-width: 62.0625rem) {
   .contact_block_left {

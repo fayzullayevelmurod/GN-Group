@@ -1,6 +1,5 @@
 // fleet
 .fleet {
-
   &_tabs {
     padding: 1.875rem 0;
     display: flex;
@@ -20,7 +19,7 @@
       font-weight: 500;
       line-height: 1.65rem;
       letter-spacing: -0.04em;
-      color: #0D203080;
+      color: #0d203080;
       display: flex;
       align-items: start;
       flex-direction: row;
@@ -115,7 +114,7 @@
     .line {
       height: 0.0625rem;
       width: 100%;
-      background: #0D20300D;
+      background: #0d20300d;
     }
 
     &:hover {
@@ -128,7 +127,7 @@
       .main_btn {
         svg {
           path {
-            transition: .3s ease;
+            transition: 0.3s ease;
             stroke: $color-white;
           }
 
@@ -245,7 +244,7 @@
       gap: 0.4375rem;
       border-radius: 0.5rem;
       padding: 1.25rem;
-      border: 0.0625rem solid #0D20300D;
+      border: 0.0625rem solid #0d20300d;
       @include transition();
 
       @include media('lg') {
@@ -258,7 +257,7 @@
         line-height: 1.37125rem;
         letter-spacing: -0.04em;
         color: $color-under;
-        transition: .2s ease;
+        transition: 0.2s ease;
 
         @include media('lg') {
           font-size: 0.75rem;
@@ -291,7 +290,7 @@
     display: flex;
     align-items: stretch;
 
-    @include media("md") {
+    @include media('md') {
       flex-direction: column;
       align-items: start;
     }
@@ -301,12 +300,20 @@
     width: 50rem;
     height: unset;
 
-    @include media("md") {
+    @include media('md') {
       height: 12.5rem;
+      width: 100%;
     }
   }
 
   .fleet_card_content {
     width: 100%;
+  }
+}
+.fleet_card_swiper {
+  height: 100%;
+  width: 100%;
+  .swiper-slide {
+    overflow: hidden;
   }
 }

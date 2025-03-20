@@ -283,6 +283,15 @@ const galleryThumbs = new Swiper('.gallery-thumbs', {
   }
 });
 
+// fleet_card_swiper
+const fleet_card_swiper = new Swiper('.fleet_card_swiper', {
+  spaceBetween: 10,
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 // Ikkala Swiper'ni bir-biriga bog'lash
 galleryTop.controller.control = galleryThumbs;
 galleryThumbs.controller.control = galleryTop;
