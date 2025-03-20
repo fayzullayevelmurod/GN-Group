@@ -267,7 +267,11 @@ const galleryThumbs = new Swiper('.gallery-thumbs', {
   slidesPerView: 5,
   centeredSlides: true,
   slideToClickedSlide: true,
-  initialSlide: 2,
+  initialSlide: 1,
+  navigation: {
+    nextEl: ".gallery-button-next",
+    prevEl: ".gallery-button-prev",
+  },
   breakpoints: {
     768: {
       slidesPerView: 5,

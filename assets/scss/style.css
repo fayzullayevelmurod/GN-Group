@@ -2942,13 +2942,60 @@ address {
   width: 100%;
 }
 
+.gallery-slider {
+  position: relative;
+}
+
 .gallery-top {
   height: 500px;
+  margin: 0 auto;
+  width: 90%;
+  position: unset;
 }
 @media (max-width: 48rem) {
   .gallery-top {
     height: 300px;
+    width: 85%;
   }
+}
+
+.gallery-button-next,
+.gallery-button-prev {
+  position: absolute;
+  top: 50%;
+  background: #000;
+  width: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 48rem) {
+  .gallery-button-next,
+  .gallery-button-prev {
+    width: 20px;
+    height: 20px;
+  }
+}
+.gallery-button-next svg,
+.gallery-button-prev svg {
+  margin: 0;
+}
+.gallery-button-next .slider_btn_icon,
+.gallery-button-prev .slider_btn_icon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.gallery-button-next {
+  right: 0;
+}
+
+.gallery-button-prev {
+  left: 0;
 }
 
 .gallery-thumbs {
@@ -3582,6 +3629,10 @@ address {
 .flatpickr-next-month svg {
   display: block;
   margin-left: auto;
+}
+
+.more-btn {
+  cursor: pointer;
 }
 
 .about_section {
