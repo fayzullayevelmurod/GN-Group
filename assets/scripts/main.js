@@ -242,8 +242,49 @@ if (gallery) {
     animateThumb: false,
     showThumbByDefault: false,
   })
-
 }
+let galleryTwo = document.querySelectorAll('.img_block .media_img');
+
+if (galleryTwo.length) {
+  galleryTwo.forEach((img, index) => {
+    img.onclick = () => {
+      let src = [];
+      let clickedIndex = 0;
+
+      galleryTwo.forEach((item, i) => {
+        src.push({
+          'src': item.getAttribute('src'),
+          'thumb': item.getAttribute('src'),
+          'subHtml': ''
+        });
+
+        if (item === img) {
+          clickedIndex = i;
+        }
+      });
+
+      let pdf = img.getAttribute('data-pdf');
+      $('#lightgallery').remove();
+      const galleryContainer = document.createElement('div');
+      galleryContainer.id = 'lightgallery';
+      document.body.appendChild(galleryContainer);
+
+      lightGallery(galleryContainer, {
+        dynamic: true,
+        dynamicEl: src,
+        index: clickedIndex,
+      });
+
+      setTimeout(() => {
+        let download = document.querySelector('#lg-download');
+        if (download) {
+          download.setAttribute('href', pdf);
+        }
+      }, 500);
+    };
+  });
+}
+
 
 
 const loader = document.getElementById('loader');

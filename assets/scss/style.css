@@ -2888,6 +2888,9 @@ address {
 }
 .media .media_imgs .img_block {
   overflow: hidden;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
 }
 .media .media_imgs .media_img {
   width: 100%;

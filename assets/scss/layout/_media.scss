@@ -299,6 +299,32 @@
 
     .img_block {
       overflow: hidden;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      // &::before {
+      //   content: '';
+      //   position: absolute;
+      //   top: 0;
+      //   bottom: 0;
+      //   left: 0;
+      //   right: 0;
+      //   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>')
+      //     rgba(0, 0, 77, 0.8);
+
+      //   background-size: 40px 40px;
+      //   background-position: center center;
+      //   background-repeat: no-repeat;
+      //   opacity: 0;
+      //   transform: scale(1);
+      //   transition: 0.3s ease-out all;
+      //   z-index: 1;
+      // }
+      // &:hover {
+      //   &::before {
+      //     opacity: 1;
+      //   }
+      // }
     }
 
     .media_img {
