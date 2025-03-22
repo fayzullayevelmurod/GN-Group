@@ -3272,6 +3272,36 @@ address {
   border: 0.0625rem solid #302470;
 }
 
+.form_inputs-tabled {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 30px;
+}
+.form_inputs-tabled::-webkit-scrollbar {
+  display: none;
+}
+.form_inputs-tabled table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+.form_inputs-tabled th,
+.form_inputs-tabled td {
+  padding: 2px 10px;
+  text-align: left;
+}
+.form_inputs-tabled .radio-tabled {
+  min-width: 500px;
+}
+.form_inputs-tabled .radio-tabled th {
+  width: 190px;
+}
+.form_inputs-tabled .radio-tabled td {
+  text-align: center;
+}
+
 @media (max-width: 62.0625rem) {
   .none {
     display: none;
