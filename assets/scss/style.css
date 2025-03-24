@@ -3674,6 +3674,23 @@ address {
   cursor: pointer;
 }
 
+.more-text {
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.143125rem;
+  letter-spacing: -0.04em;
+  color: #302470;
+  width: 82px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
+  display: none;
+}
+.more-text.show {
+  display: block;
+}
+
 .about_section {
   padding: 6.25rem 0 0 0;
 }
@@ -5171,6 +5188,9 @@ address {
 }
 .radar_lists .name {
   width: 16.375rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .radar_lists_media {
   display: none;

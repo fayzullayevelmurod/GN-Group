@@ -336,3 +336,15 @@ const fleet_card_swiper = new Swiper('.fleet_card_swiper', {
 // Ikkala Swiper'ni bir-biriga bog'lash
 galleryTop.controller.control = galleryThumbs;
 galleryThumbs.controller.control = galleryTop;
+
+const seaListBody = document.querySelectorAll(".sea_list_body");
+if (seaListBody) {
+  seaListBody.forEach(item => {
+    const moreBtn = item.querySelector(".more-btn");
+    const moreText = item.querySelector(".more-text");
+    moreBtn.addEventListener("click", () => {
+      moreBtn.style.display = 'none';
+      moreText.classList.add("show")
+    })
+  })
+}
