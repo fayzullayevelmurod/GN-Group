@@ -18,7 +18,7 @@
       width: 11.625rem;
     }
     img {
-      width: 200px;
+      width: 12.5rem;
     }
   }
 
@@ -57,7 +57,7 @@
       color: $color-under-75;
       @include transition();
       position: relative;
-      padding: 10px 0;
+      padding: 0.625rem 0;
 
       &::after {
         position: absolute;
@@ -163,26 +163,26 @@
   .dropdown-list {
     position: absolute;
     top: 100%;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     display: none;
     z-index: 1000;
     background: #fff;
     transition: all 0.2s ease;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    min-width: 186px;
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
+    min-width: 11.625rem;
     white-space: nowrap;
     text-align: left;
 
     a {
       color: rgba(13, 32, 48, 0.7490196078) !important;
-      padding: 15px 30px;
+      padding: 0.9375rem 1.875rem;
       color: #000;
       min-height: inherit;
       transition: all 0.3s ease;
       display: inline-block;
       width: 100%;
-      border-radius: 5px;
-      font-size: 16px;
+      border-radius: 0.3125rem;
+      font-size: 1rem;
       &:hover {
         color: #fff !important;
         background: #0077b5;
@@ -191,14 +191,14 @@
         }
       }
       @include media('lg') {
-        padding: 10px 20px;
+        padding: 0.625rem 1.25rem;
       }
     }
     li {
       white-space: nowrap;
     }
     @include media('lg') {
-      width: 140px;
+      width: 8.75rem;
     }
   }
 }

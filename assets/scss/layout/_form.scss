@@ -215,24 +215,24 @@
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   &::-webkit-scrollbar {
     display: none;
   }
   table {
     width: 100%;
-    min-width: 600px;
+    min-width: 37.5rem;
     border-collapse: collapse;
   }
   th,
   td {
-    padding: 2px 10px;
+    padding: 0.125rem 0.625rem;
     text-align: left;
   }
   .radio-tabled {
-    min-width: 500px;
+    min-width: 31.25rem;
     th {
-      width: 190px;
+      width: 11.875rem;
     }
     td {
       text-align: center;
